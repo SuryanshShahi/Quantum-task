@@ -9,6 +9,10 @@ body {
   width: 3px;
   height: 3px;
 }
+.dropdown-menu .row::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
 ::-webkit-scrollbar-track {
   background: rgb(131, 131, 131);
   border-radius: 10px;
@@ -65,9 +69,13 @@ body {
   width: 1248px;
   padding: 0;
 }
-.centertag:hover {
+.centertag a{
   cursor: pointer;
-  color: orange;
+  color: white !important;
+}
+.centertag a:hover {
+  cursor: pointer;
+  color: orange !important;
 }
 .dropdownHover:hover {
   cursor: pointer;

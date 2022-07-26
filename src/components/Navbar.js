@@ -34,7 +34,7 @@ function Navbar() {
               : "navbar navbar-expand-lg bg-transparent"
           }
         >
-          <div className="container">
+          <div className="container p-0">
             <NavLink
               className="navbar-brand "
               style={{ fontWeight: "500" }}
@@ -54,7 +54,10 @@ function Navbar() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="fa fa-bars border-0 " style={{outline:"none"}}></span>
+              <span
+                className="fa fa-bars border-0 "
+                style={{ outline: "none" }}
+              ></span>
             </button>
             <div
               className="collapse navbar-collapse"
@@ -73,10 +76,14 @@ function Navbar() {
                   </NavLink>
                   <div className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4 w-100">
                     <div
-                      className="row bg-white py-4"
-                      style={{ borderTop: "3px solid orange" }}
+                      className="row mr-lg-0 mr-1 bg-white py-4"
+                      style={{
+                        borderTop: "3px solid orange",
+                        maxHeight: "80vh",
+                        overflowY: "scroll",
+                      }}
                     >
-                      <div className="col-3 px-4 pt-2">
+                      <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
                         <div className="text-dark">
                           <b className="pl-3">Digital Marketing</b>
 
@@ -91,7 +98,7 @@ function Navbar() {
                           })}
                         </div>
                       </div>
-                      <div className="col-3 px-4 pt-2">
+                      <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
                         <div className="text-dark">
                           <b className="pl-3">Web & Apps Development</b>
 
@@ -106,7 +113,7 @@ function Navbar() {
                           })}
                         </div>
                       </div>
-                      <div className="col-3 px-4 pt-2">
+                      <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
                         <div className="text-dark">
                           <b className="pl-3">Paid Marketing</b>
 
@@ -130,10 +137,14 @@ function Navbar() {
                   </NavLink>
                   <div className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4 w-100">
                     <div
-                      className="row bg-white py-4"
-                      style={{ borderTop: "3px solid orange" }}
+                      className="row mr-lg-0 mr-1 bg-white py-4"
+                      style={{
+                        borderTop: "3px solid orange",
+                        maxHeight: "80vh",
+                        overflowY: "scroll",
+                      }}
                     >
-                      <div className="col-3 px-4 pt-2">
+                      <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
                         <div className="text-dark">
                           <b className="pl-3">Digital Marketing</b>
 
@@ -148,7 +159,7 @@ function Navbar() {
                           })}
                         </div>
                       </div>
-                      <div className="col-3 px-4 pt-2">
+                      <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
                         <div className="text-dark">
                           <b className="pl-3">Web & Apps Development</b>
 
@@ -163,7 +174,7 @@ function Navbar() {
                           })}
                         </div>
                       </div>
-                      <div className="col-3 px-4 pt-2">
+                      <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
                         <div className="text-dark">
                           <b className="pl-3">Paid Marketing</b>
 
@@ -178,7 +189,7 @@ function Navbar() {
                           })}
                         </div>
                       </div>
-                      <div className="col-3 px-4 pt-2">
+                      <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
                         <div className="text-dark">
                           <b className="pl-3">Others</b>
 
@@ -196,10 +207,34 @@ function Navbar() {
                     </div>
                   </div>
                 </li>
-                <li className="nav-item pl-3">
+                <li className="nav-item pl-3 position-relative">
                   <NavLink to="/pricing" className="nav-link">
                     Pricing
                   </NavLink>
+                  <div
+                    className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4"
+                    style={{ width: "fit-content" }}
+                  >
+                    <div className=" justify-content-center d-flex">
+                      <div
+                        className="mr-lg-0 mr-1 bg-white"
+                        style={{ borderTop: "3px solid orange" }}
+                      >
+                        <div className="dropdownHover py-2 px-3">
+                          SEO Packages
+                        </div>
+                        <div className="dropdownHover py-2 px-3">
+                          SMO Packages
+                        </div>
+                        <div className="dropdownHover py-2 px-3">
+                          PPC Packages
+                        </div>
+                        <div className="dropdownHover py-2 px-3">
+                          WEB Packages
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li className="nav-item pl-3">
                   <NavLink to="/protfolio" className="nav-link">
@@ -257,7 +292,12 @@ function Navbar() {
               </div>
               <div>
                 <span style={{ fontSize: "12px", fontWeight: "normal" }}>
-                  <span className="centertag">Home</span> / SEO Packages
+                  <span className="centertag">
+                    <NavLink to="/" className="text-decoration-none">
+                      Home
+                    </NavLink>
+                  </span>{" "}
+                  / SEO Packages
                 </span>
               </div>
             </div>
@@ -266,7 +306,10 @@ function Navbar() {
         <div id="hero"></div>
       </div>
 
-      <div className="container-fluid justify-content-start align-items-center position-fixed d-flex" style={{bottom:"8%", left:"5%", zIndex:"1"}}>
+      <div
+        className="container-fluid justify-content-start align-items-center position-fixed d-flex"
+        style={{ bottom: "8%", left: "5%", zIndex: "1" }}
+      >
         <a
           href="tel:0123456789"
           style={{
