@@ -34,7 +34,7 @@ function Navbar() {
               : "navbar navbar-expand-lg bg-transparent"
           }
         >
-          <div className="container p-0">
+          <div className="container">
             <NavLink
               className="navbar-brand "
               style={{ fontWeight: "500" }}
