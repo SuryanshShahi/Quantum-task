@@ -1,9 +1,24 @@
 import React from "react";
-import { SEOAnalysis, OnPage, OffPage, testimonials } from "./Data/Content";
+import {
+  SEOAnalysis,
+  OnPage,
+  OffPage,
+  OffPage2,
+  OffPage3,
+  OffPage4,
+  testimonials,
+  Facebook,
+  Instagram,
+  Twitter,
+  Printrest,
+  Linkedin,
+  Reports,
+  CustomerReport,
+} from "./Data/Content";
 import MultiCarousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import StarsRating from "stars-rating";
-import Google from "./Images/powered_by_google.png"
+import Google from "./Images/powered_by_google.png";
 
 function Home() {
   const responsive = {
@@ -339,6 +354,7 @@ function Home() {
           </div>
         </div>
 
+        {/*---------------------------------------------------------ON-PAGE OPTIMIZATION ACTIVITIES---------------------------------------------------------*/}
         <div className="row mt-lg-5 mt-4">
           <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
             <div
@@ -347,21 +363,27 @@ function Home() {
             >
               ON-PAGE OPTIMIZATION ACTIVITIES
             </div>
-            {OnPage.map((e) => {
-              return (
-                <div
-                  className="d-flex pb-2"
-                  style={{ fontWeight: "lighter" }}
-                  key={e.id}
-                >
-                  {e.data}
-                  <div className="ml-auto">{e.sign}</div>
-                </div>
-              );
-            })}
-            <div className="d-flex pb-2" style={{ fontWeight: "lighter" }}>
+            <table>
+              {OnPage.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
+                      {e.sign}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
+
+            <div className="d-flex pb-2 mx-2" style={{ fontWeight: "lighter" }}>
               On Site Blog Posting – Applicable from 1st month
-              <div className="ml-auto">1</div>
+              <div className="ml-auto" style={{ fontWeight: "normal" }}>
+                1&nbsp;
+              </div>
             </div>
           </div>
 
@@ -372,21 +394,26 @@ function Home() {
             >
               ON-PAGE OPTIMIZATION ACTIVITIES
             </div>
-            {OnPage.map((e) => {
-              return (
-                <div
-                  className="d-flex pb-2"
-                  style={{ fontWeight: "lighter" }}
-                  key={e.id}
-                >
-                  {e.data}
-                  <div className="ml-auto">{e.sign}</div>
-                </div>
-              );
-            })}
-            <div className="d-flex pb-2" style={{ fontWeight: "lighter" }}>
+            <table>
+              {OnPage.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
+                      {e.sign}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
+            <div className="d-flex pb-2 mx-2" style={{ fontWeight: "lighter" }}>
               On Site Blog Posting – Applicable from 1st month
-              <div className="ml-auto">2</div>
+              <div className="ml-auto" style={{ fontWeight: "normal" }}>
+                2&nbsp;
+              </div>
             </div>
           </div>
 
@@ -397,21 +424,26 @@ function Home() {
             >
               ON-PAGE OPTIMIZATION ACTIVITIES
             </div>
-            {OnPage.map((e) => {
-              return (
-                <div
-                  className="d-flex pb-2"
-                  style={{ fontWeight: "lighter" }}
-                  key={e.id}
-                >
-                  {e.data}
-                  <div className="ml-auto">{e.sign}</div>
-                </div>
-              );
-            })}
-            <div className="d-flex pb-2" style={{ fontWeight: "lighter" }}>
+            <table>
+              {OnPage.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
+                      {e.sign1}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
+            <div className="d-flex pb-2 mx-2" style={{ fontWeight: "lighter" }}>
               On Site Blog Posting – Applicable from 1st month
-              <div className="ml-auto">4</div>
+              <div className="ml-auto" style={{ fontWeight: "normal" }}>
+                4&nbsp;
+              </div>
             </div>
           </div>
 
@@ -422,21 +454,26 @@ function Home() {
             >
               ON-PAGE OPTIMIZATION ACTIVITIES
             </div>
-            {OnPage.map((e) => {
-              return (
-                <div
-                  className="d-flex pb-2"
-                  style={{ fontWeight: "lighter" }}
-                  key={e.id}
-                >
-                  {e.data}
-                  <div className="ml-auto">{e.sign}</div>
-                </div>
-              );
-            })}
-            <div className="d-flex pb-2" style={{ fontWeight: "lighter" }}>
+            <table>
+              {OnPage.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
+                      {e.sign1}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
+            <div className="d-flex pb-2 mx-2" style={{ fontWeight: "lighter" }}>
               On Site Blog Posting – Applicable from 1st month
-              <div className="ml-auto">5</div>
+              <div className="ml-auto" style={{ fontWeight: "normal" }}>
+                5&nbsp;
+              </div>
             </div>
           </div>
         </div>
@@ -456,26 +493,30 @@ function Home() {
           </div>
         </div>
 
+        {/*---------------------------------------------------------OFF-PAGE OPTIMIZATION ACTIVITIES---------------------------------------------------------*/}
         <div className="row mt-lg-5 mt-4">
           <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              ON-PAGE OPTIMIZATION ACTIVITIES
+              OFF-PAGE OPTIMIZATION ACTIVITIES
             </div>
-            {OffPage.map((e) => {
-              return (
-                <div
-                  className="d-flex pb-2"
-                  style={{ fontWeight: "lighter" }}
-                  key={e.id}
-                >
-                  {e.data}
-                  <div className="ml-auto">{e.sign}</div>
-                </div>
-              );
-            })}
+            <table>
+              {OffPage.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
+                      {e.sign}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
           </div>
 
           <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
@@ -483,20 +524,23 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              ON-PAGE OPTIMIZATION ACTIVITIES
+              OFF-PAGE OPTIMIZATION ACTIVITIES
             </div>
-            {OffPage.map((e) => {
-              return (
-                <div
-                  className="d-flex pb-2"
-                  style={{ fontWeight: "lighter" }}
-                  key={e.id}
-                >
-                  {e.data}
-                  <div className="ml-auto">{e.sign}</div>
-                </div>
-              );
-            })}
+            <table>
+              {OffPage.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
+                      {e.sign1}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
           </div>
 
           <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
@@ -504,20 +548,23 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              ON-PAGE OPTIMIZATION ACTIVITIES
+              OFF-PAGE OPTIMIZATION ACTIVITIES
             </div>
-            {OffPage.map((e) => {
-              return (
-                <div
-                  className="d-flex pb-2"
-                  style={{ fontWeight: "lighter" }}
-                  key={e.id}
-                >
-                  {e.data}
-                  <div className="ml-auto">{e.sign}</div>
-                </div>
-              );
-            })}
+            <table>
+              {OffPage.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
+                      {e.sign2}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
           </div>
 
           <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
@@ -525,24 +572,753 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              ON-PAGE OPTIMIZATION ACTIVITIES
+              OFF-PAGE OPTIMIZATION ACTIVITIES
             </div>
-            {OffPage.map((e) => {
-              return (
-                <div
-                  className="d-flex pb-2"
-                  style={{ fontWeight: "lighter" }}
-                  key={e.id}
-                >
-                  {e.data}
-                  <div className="ml-auto">{e.sign}</div>
-                </div>
-              );
-            })}
+            <table>
+              {OffPage.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
+                      {e.sign3}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
           </div>
         </div>
 
-        <div className="my-5 py-5 px-2 row" style={{background:"#efefef"}}>
+        <div className="row">
+          <div className="col-lg-3 col-md-6 col-12">
+            <hr />
+          </div>
+          <div className="col-lg-3 col-md-6 col-12">
+            <hr />
+          </div>
+          <div className="col-lg-3 col-md-6 col-12">
+            <hr />
+          </div>
+          <div className="col-lg-3 col-md-6 col-12">
+            <hr />
+          </div>
+        </div>
+
+        {/*---------------------------------------------------------SMO ACTIVITIES---------------------------------------------------------*/}
+        <div className="row mt-lg-5 mt-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+            <div
+              className="mb-4 text-center"
+              style={{ fontWeight: "lighter", fontSize: "20px" }}
+            >
+              SMO ACTIVITIES
+            </div>
+            <div>
+              {" "}
+              <div
+                className="mb-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                FACEBOOK
+              </div>
+              <table>
+                {Facebook.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+
+            <div>
+              {" "}
+              <div
+                className="my-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                INSTAGRAM
+              </div>
+              <table>
+                {Instagram.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+
+            <div>
+              {" "}
+              <div
+                className="my-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                TWITTER
+              </div>
+              <table>
+                {Twitter.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+
+            <div>
+              {" "}
+              <div
+                className="my-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                PINTEREST
+              </div>
+              <table>
+                {Printrest.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+
+            <div>
+              {" "}
+              <div
+                className="my-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                LINKEDIN
+              </div>
+              <table>
+                {Linkedin.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+            <div
+              className="mb-4 text-center"
+              style={{ fontWeight: "lighter", fontSize: "20px" }}
+            >
+              SMO ACTIVITIES
+            </div>
+            <div>
+              {" "}
+              <div
+                className="mb-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                FACEBOOK
+              </div>
+              <table>
+                {Facebook.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign1}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+
+            <div>
+              {" "}
+              <div
+                className="my-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                INSTAGRAM
+              </div>
+              <table>
+                {Instagram.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign1}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+
+            <div>
+              {" "}
+              <div
+                className="my-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                TWITTER
+              </div>
+              <table>
+                {Twitter.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign1}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+
+            <div>
+              {" "}
+              <div
+                className="my-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                PINTEREST
+              </div>
+              <table>
+                {Printrest.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign1}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+
+            <div>
+              {" "}
+              <div
+                className="my-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                LINKEDIN
+              </div>
+              <table>
+                {Linkedin.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign1}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+            <div
+              className="mb-4 text-center"
+              style={{ fontWeight: "lighter", fontSize: "20px" }}
+            >
+              SMO ACTIVITIES
+            </div>
+            <div>
+              {" "}
+              <div
+                className="mb-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                FACEBOOK
+              </div>
+              <table>
+                {Facebook.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign2}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+            <div>
+              {" "}
+              <div
+                className="my-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                INSTAGRAM
+              </div>
+              <table>
+                {Instagram.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign2}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+
+            <div>
+              {" "}
+              <div
+                className="my-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                TWITTER
+              </div>
+              <table>
+                {Twitter.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign2}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+
+            <div>
+              {" "}
+              <div
+                className="my-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                PINTEREST
+              </div>
+              <table>
+                {Printrest.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign2}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+
+            <div>
+              {" "}
+              <div
+                className="my-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                LINKEDIN
+              </div>
+              <table>
+                {Linkedin.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign2}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+            <div
+              className="mb-4 text-center"
+              style={{ fontWeight: "lighter", fontSize: "20px" }}
+            >
+              SMO ACTIVITIES
+            </div>
+            <div>
+              {" "}
+              <div
+                className="mb-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                FACEBOOK
+              </div>
+              <table>
+                {Facebook.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign3}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+
+            <div>
+              {" "}
+              <div
+                className="my-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                INSTAGRAM
+              </div>
+              <table>
+                {Instagram.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign3}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+
+            <div>
+              {" "}
+              <div
+                className="my-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                TWITTER
+              </div>
+              <table>
+                {Twitter.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign3}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+
+            <div>
+              {" "}
+              <div
+                className="my-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                PINTEREST
+              </div>
+              <table>
+                {Printrest.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign3}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+
+            <div>
+              {" "}
+              <div
+                className="my-4 text-center"
+                style={{ fontWeight: "lighter", fontSize: "17px" }}
+              >
+                LINKEDIN
+              </div>
+              <table>
+                {Linkedin.map((e) => {
+                  return (
+                    <tr>
+                      <td>{e.name}</td>
+                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                        {e.sign3}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+          </div>{" "}
+        </div>
+
+        <div className="row">
+          <div className="col-lg-3 col-md-6 col-12">
+            <hr />
+          </div>
+          <div className="col-lg-3 col-md-6 col-12">
+            <hr />
+          </div>
+          <div className="col-lg-3 col-md-6 col-12">
+            <hr />
+          </div>
+          <div className="col-lg-3 col-md-6 col-12">
+            <hr />
+          </div>
+        </div>
+
+        {/*---------------------------------------------------------REPORTS---------------------------------------------------------*/}
+        <div className="row mt-lg-5 mt-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+            <div
+              className="mb-4 text-center"
+              style={{ fontWeight: "lighter", fontSize: "20px" }}
+            >
+              REPORTS
+            </div>
+            <table>
+              {Reports.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      {e.sign}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
+          </div>
+
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+            <div
+              className="mb-4 text-center"
+              style={{ fontWeight: "lighter", fontSize: "20px" }}
+            >
+              REPORTS
+            </div>
+            <table>
+              {Reports.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      {e.sign}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
+          </div>
+
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+            <div
+              className="mb-4 text-center"
+              style={{ fontWeight: "lighter", fontSize: "20px" }}
+            >
+              REPORTS
+            </div>
+            <table>
+              {Reports.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      {e.sign}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
+          </div>
+
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+            <div
+              className="mb-4 text-center"
+              style={{ fontWeight: "lighter", fontSize: "20px" }}
+            >
+              REPORTS
+            </div>
+            <table>
+              {Reports.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      {e.sign}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-lg-3 col-md-6 col-12">
+            <hr />
+          </div>
+          <div className="col-lg-3 col-md-6 col-12">
+            <hr />
+          </div>
+          <div className="col-lg-3 col-md-6 col-12">
+            <hr />
+          </div>
+          <div className="col-lg-3 col-md-6 col-12">
+            <hr />
+          </div>
+        </div>
+
+        {/*---------------------------------------------------------CUSTOMER SUPPORT---------------------------------------------------------*/}
+        <div className="row mt-lg-5 mt-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+            <div
+              className="mb-4 text-center"
+              style={{ fontWeight: "lighter", fontSize: "20px" }}
+            >
+              CUSTOMER SUPPORT
+            </div>
+            <table>
+              {CustomerReport.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      {e.sign}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
+          </div>
+
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+            <div
+              className="mb-4 text-center"
+              style={{ fontWeight: "lighter", fontSize: "20px" }}
+            >
+              CUSTOMER SUPPORT
+            </div>
+            <table>
+              {CustomerReport.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      {e.sign}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
+          </div>
+
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+            <div
+              className="mb-4 text-center"
+              style={{ fontWeight: "lighter", fontSize: "20px" }}
+            >
+              CUSTOMER SUPPORT
+            </div>
+            <table>
+              {CustomerReport.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      {e.sign}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
+          </div>
+
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+            <div
+              className="mb-4 text-center"
+              style={{ fontWeight: "lighter", fontSize: "20px" }}
+            >
+              CUSTOMER SUPPORT
+            </div>
+            <table>
+              {CustomerReport.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      {e.sign}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
+          </div>
+        </div>
+
+        {/*---------------------------------------------------------START TODAY---------------------------------------------------------*/}
+        <div className="row startbtn my-5">
+          <div className="col-lg-3 col-md-6 col-sm-6 col-12 justify-content-center d-flex mb-3">
+            <div
+              className="btn btn-primary px-4 rounded-pill border-0 shadow-sm py-2"
+              style={{ fontSize: "14px", fontWeight: "500" }}
+            >
+              START TODAY
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6 col-sm-6 col-12 justify-content-center d-flex mb-3">
+            <div
+              className="btn btn-primary px-4 rounded-pill border-0 shadow-sm py-2"
+              style={{ fontSize: "14px", fontWeight: "500" }}
+            >
+              START TODAY
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6 col-sm-6 col-12 justify-content-center d-flex mb-3">
+            <div
+              className="btn btn-primary px-4 rounded-pill border-0 shadow-sm py-2"
+              style={{ fontSize: "14px", fontWeight: "500" }}
+            >
+              START TODAY
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6 col-sm-6 col-12 justify-content-center d-flex mb-3">
+            <div
+              className="btn btn-primary px-4 rounded-pill border-0 shadow-sm py-2"
+              style={{ fontSize: "14px", fontWeight: "500" }}
+            >
+              START TODAY
+            </div>
+          </div>
+        </div>
+
+        <div className="my-5 py-5 px-2 row" style={{ background: "#efefef" }}>
           <div className="col-lg-3 col-md-3 col-12 justify-content-center d-flex align-items-center">
             <div className="d-flex">
               <div
@@ -570,7 +1346,12 @@ function Home() {
                 />
                 <div className="mt-2">
                   Based on 97 reviews<br></br>
-                  <img src={Google} className="img-fluid" width="144" height="18"/>
+                  <img
+                    src={Google}
+                    className="img-fluid"
+                    width="144"
+                    height="18"
+                  />
                 </div>
               </div>
             </div>
@@ -584,7 +1365,7 @@ function Home() {
                     style={{
                       boxShadow: "#80808069 0px 0px 7px 0.5px",
                       maxWidth: "303px",
-                      background:"#fafafa",
+                      background: "#fafafa",
                       maxHeight: "222px",
                     }}
                   >

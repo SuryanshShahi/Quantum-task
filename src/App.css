@@ -113,6 +113,31 @@ body {
 
 @media (min-width: 990px) {
   .B.active {
-    background:none;
+    background: none;
   }
+}
+
+/* --------------------Home------------------- */
+/* td {
+  padding-inline: 10px;
+} */
+table {
+  width: 100%;
+  font-weight: lighter;
+}
+
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f6f6f6 ;
+}
+.startbtn .rounded-pill {
+  background-color: #ffa737;
+  transition: 0.3s;
+}
+.startbtn .rounded-pill:hover {
+  background-color: rgba(255, 166, 0, 0.656);
 }
