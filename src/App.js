@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
   useEffect(() => {
-    document.title = `Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra`;
+    document.title = `Complete SEO Packages USA, Affordable SEO Plans Consultant`;
   });
   return (
     <section>

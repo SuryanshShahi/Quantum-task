@@ -67,6 +67,7 @@ body {
   top: 60%;
   position: relative;
   width: 1248px;
+  transition: 0.3s;
   padding: 0;
 }
 .centertag a{
