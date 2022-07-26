@@ -70,7 +70,7 @@ body {
   transition: 0.3s;
   padding: 0;
 }
-.centertag a{
+.centertag a {
   cursor: pointer;
   color: white !important;
 }
@@ -127,9 +127,6 @@ body {
 }
 
 /* --------------------Home------------------- */
-/* td {
-  padding-inline: 10px;
-} */
 table {
   width: 100%;
   font-weight: lighter;
@@ -141,7 +138,7 @@ td {
 }
 
 tr:nth-child(even) {
-  background-color: #f6f6f6 ;
+  background-color: #f6f6f6;
 }
 .startbtn .rounded-pill {
   background-color: #ffa737;

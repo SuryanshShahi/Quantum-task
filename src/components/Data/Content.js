@@ -14,13 +14,13 @@ export const dropdown = [
 ];
 
 export const SEOAnalysis = [
-  { data: "Pre-Optimization Website Analysis", sign: "✓" },
-  { data: "Competitor Analysis", sign: "✓" },
-  { data: "Keyword Research & Analysis", sign: "✓" },
-  { data: "Baseline Ranking Check", sign: "✓" },
-  { data: "Duplicate Content Check", sign: "✓" },
-  { data: "Google Penalty Check", sign: "✓" },
-  { data: "Backlink Analysis (if required)", sign: "x" },
+  { name: "Pre-Optimization Website Analysis", sign: "✓" },
+  { name: "Competitor Analysis", sign: "✓" },
+  { name: "Keyword Research & Analysis", sign: "✓" },
+  { name: "Baseline Ranking Check", sign: "✓" },
+  { name: "Duplicate Content Check", sign: "✓" },
+  { name: "Google Penalty Check", sign: "✓" },
+  { name: "Backlink Analysis (if required)", sign: "x" },
 ];
 
 export const OnPage = [

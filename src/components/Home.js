@@ -56,6 +56,7 @@ function Home() {
           </div>
         </div>
 
+         {/*---------------------------------------------------------Our SEO Plans---------------------------------------------------------*/}
         <div className="row mt-5">
           <div
             className="col-lg-3 col-md-6 col-12 justify-content-center d-flex py-4"
@@ -252,7 +253,8 @@ function Home() {
             <hr />
           </div>
         </div>
-
+        Our SEO Plans
+        {/*---------------------------------------------------------FIRST HAND SEO ANALYSIS---------------------------------------------------------*/}
         <div className="row mt-lg-5 mt-4">
           <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
             <div
@@ -261,18 +263,21 @@ function Home() {
             >
               FIRST HAND SEO ANALYSIS
             </div>
+            <table>
             {SEOAnalysis.map((e) => {
               return (
-                <div
-                  className="d-flex pb-2"
-                  style={{ fontWeight: "lighter" }}
-                  key={e.id}
-                >
-                  {e.data}
-                  <div className="ml-auto">{e.sign}</div>
-                </div>
+                <tr>
+                  <td>{e.name}</td>
+                  <td
+                    className=""
+                    style={{ float: "right", fontWeight: "normal" }}
+                  >
+                    {e.sign}
+                  </td>
+                </tr>
               );
             })}
+          </table>
           </div>
 
           <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
@@ -282,18 +287,21 @@ function Home() {
             >
               FIRST HAND SEO ANALYSIS
             </div>
-            {SEOAnalysis.map((e) => {
-              return (
-                <div
-                  className="d-flex pb-2"
-                  style={{ fontWeight: "lighter" }}
-                  key={e.id}
-                >
-                  {e.data}
-                  <div className="ml-auto">{e.sign}</div>
-                </div>
-              );
-            })}
+            <table>
+              {SEOAnalysis.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
+                      {e.sign}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
           </div>
 
           <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
@@ -303,18 +311,21 @@ function Home() {
             >
               FIRST HAND SEO ANALYSIS
             </div>
+            <table>
             {SEOAnalysis.map((e) => {
               return (
-                <div
-                  className="d-flex pb-2"
-                  style={{ fontWeight: "lighter" }}
-                  key={e.id}
-                >
-                  {e.data}
-                  <div className="ml-auto">{e.sign}</div>
-                </div>
+                <tr>
+                  <td>{e.name}</td>
+                  <td
+                    className=""
+                    style={{ float: "right", fontWeight: "normal" }}
+                  >
+                    {e.sign}
+                  </td>
+                </tr>
               );
             })}
+          </table>
           </div>
 
           <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
@@ -324,18 +335,21 @@ function Home() {
             >
               FIRST HAND SEO ANALYSIS
             </div>
+            <table>
             {SEOAnalysis.map((e) => {
               return (
-                <div
-                  className="d-flex pb-2"
-                  style={{ fontWeight: "lighter" }}
-                  key={e.id}
-                >
-                  {e.data}
-                  <div className="ml-auto">{e.sign}</div>
-                </div>
+                <tr>
+                  <td>{e.name}</td>
+                  <td
+                    className=""
+                    style={{ float: "right", fontWeight: "normal" }}
+                  >
+                    {e.sign}
+                  </td>
+                </tr>
               );
             })}
+          </table>
           </div>
         </div>
 
