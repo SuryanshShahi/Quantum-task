@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { dropdown } from "./Data/Content";
+import logo from "./Images/logo.png";
+import logoWhite from "./Images/logo-white.png";
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -22,27 +24,28 @@ function Navbar() {
 
   return (
     <section>
-      <div className="position-absolute" id="tagline">
-        abc
+      <div className="position-absolute" style={{ zIndex: "-1" }} id="top">
+        .
       </div>
       <header className="fixed-top" id="header">
         <nav
-          style={{ boxShadow: "rgb(0 0 0 / 12%) 0 1px 3px" }}
+          style={{ boxShadow: "0 8px 20px 0 rgb(0 0 0 / 10%)" }}
           className={
             navbar
               ? "navbar active navbar-expand-lg bg-white text-dark"
               : "navbar navbar-expand-lg bg-transparent"
           }
         >
-          <div className="container">
+          <div className="container-fluid mx-5">
             <NavLink
-              className="navbar-brand "
-              style={{ fontWeight: "500" }}
-              to="/"
+              className="navbar-brand"
+              to="https://quantumitinnovation.com/"
             >
-              <div className="text-info">
-                DIGITAL<span className="text-danger">GUIDER</span>
-              </div>
+              <img
+                src={logo}
+                className="img-fluid my-3 py-1"
+                style={{ width: "160px", height: "70px" }}
+              />
             </NavLink>
             <button
               className="navbar-toggler"
@@ -66,19 +69,19 @@ function Navbar() {
               <ul
                 className={
                   B
-                    ? "B active navbar-nav pl-lg-5 mb-2 mb-lg-0"
-                    : "B navbar-nav pl-lg-5 mb-2 mb-lg-0"
+                    ? "B active ml-auto navbar-nav pl-lg-5 mb-2 mb-lg-0"
+                    : "B navbar-nav ml-auto pl-lg-5 mb-2 mb-lg-0"
                 }
               >
                 <li className="active nav-item pl-3">
-                  <NavLink to="/" exact className="nav-link">
-                    Services
+                  <NavLink to="/" exact className="nav-link d-flex align-items-center">
+                    Services<span className="fa fa-angle-down pl-1"></span>
                   </NavLink>
                   <div className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4 w-100">
                     <div
                       className="row mr-lg-0 mr-1 bg-white py-4"
                       style={{
-                        borderTop: "3px solid orange",
+                        borderBottom: "3px solid #086AD8",
                         maxHeight: "80vh",
                         overflowY: "scroll",
                       }}
@@ -132,14 +135,14 @@ function Navbar() {
                   </div>
                 </li>
                 <li className="nav-item pl-3">
-                  <NavLink to="/market" className="nav-link">
-                    Market
+                  <NavLink to="/market" className="nav-link d-flex align-items-center">
+                  Market<span className="fa fa-angle-down pl-1"></span>
                   </NavLink>
                   <div className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4 w-100">
                     <div
                       className="row mr-lg-0 mr-1 bg-white py-4"
                       style={{
-                        borderTop: "3px solid orange",
+                        borderBottom: "3px solid #086AD8",
                         maxHeight: "80vh",
                         overflowY: "scroll",
                       }}
@@ -208,8 +211,8 @@ function Navbar() {
                   </div>
                 </li>
                 <li className="nav-item pl-3 position-relative">
-                  <NavLink to="/pricing" className="nav-link">
-                    Pricing
+                  <NavLink to="/pricing" className="nav-link d-flex align-items-center">
+                  Pricing<span className="fa fa-angle-down pl-1"></span>
                   </NavLink>
                   <div
                     className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4"
@@ -218,7 +221,7 @@ function Navbar() {
                     <div className=" justify-content-center d-flex">
                       <div
                         className="mr-lg-0 mr-1 bg-white"
-                        style={{ borderTop: "3px solid orange" }}
+                        style={{ borderBottom: "3px solid #086AD8", }}
                       >
                         <div className="dropdownHover py-2 px-3">
                           SEO Packages
@@ -262,7 +265,7 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li className="nav-item pl-lg-3 mx-lg-0 mx-5 mb-lg-0 mb-3">
-                  <div className="nav-link btn btn-danger">
+                  <div className="nav-link btn btn-primary">
                     Free Consultation
                   </div>
                 </li>
@@ -316,14 +319,14 @@ function Navbar() {
             height: "50px",
             width: "50px",
             borderRadius: "50%",
-            background: "rgb(85, 110, 237)",
+            background: "rgb(71 146 230)",
           }}
           className="fa fa-phone fa-lg position-absolute text-decoration-none shadow-lg justify-content-center text-white align-items-center d-flex"
         ></a>
         <span
           className="position-relative text-white px-3 py-1 shadow-lg"
           style={{
-            background: "rgb(85, 110, 237)",
+            background: "rgb(71 146 230)",
             borderRadius: "5px",
             marginLeft: "60px",
           }}
@@ -334,7 +337,7 @@ function Navbar() {
 
       <div className="backtotop container-fluid justify-content-end d-flex">
         <a
-          href="#tagline"
+          href="#top"
           className={
             back
               ? "back active fa fa-angle-up bg-dark position-absolute text-decoration-none hello text-white text-center"
@@ -349,6 +352,3 @@ function Navbar() {
 }
 
 export default Navbar;
-// <video autoPlay loop muted className="w-100 back">
-// <source src={car} />
-// </video>

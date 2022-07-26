@@ -1,8 +1,13 @@
+@font-face {
+  font-family: Cerebri;
+  src: url(./components/font/Cerebri\ Sans\ Regular.ttf);
+}
 body {
   font-size: 14px;
 }
 * {
   scroll-behavior: smooth;
+  font-family: Cerebri;
 }
 
 .testomonials::-webkit-scrollbar {
@@ -26,19 +31,32 @@ body {
 
 .navbar {
   height: 80px;
-  transition: 0.3s;
+  /* transition: 0.3s; */
+  animation: 1.8s ease-out 0s 1 fadeInDown;
+  transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+@keyframes fadeInDown {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .active.navbar a {
   color: black;
 }
 .nav-link {
   color: white;
+  font-weight: 500;
+  font-size: 16px;
 }
 .navbar-nav .active {
-  color: orange !important;
+  color: #086AD8 !important;
 }
 .nav-link:hover {
-  color: orange !important;
+  color: #086AD8 !important;
   z-index: 1 !important;
 }
 .B.active {
@@ -46,12 +64,12 @@ body {
 }
 
 .all {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
 
 #hero {
-  background: url("./components/Images/bg.jpg") no-repeat;
+  background: url("./components/Images/bg.webp") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -76,19 +94,19 @@ body {
 }
 .centertag a:hover {
   cursor: pointer;
-  color: orange !important;
+  color: #086AD8 !important;
 }
 .dropdownHover:hover {
   cursor: pointer;
   color: white;
   transition: 0.3s;
-  background-color: orange;
+  background-color: #086AD8;
 }
 
 /* -----------------Footer------------------ */
 .serviceAreas:hover {
   cursor: pointer;
-  color: orange;
+  color: #086AD8;
 }
 
 .backtotop {
@@ -108,7 +126,7 @@ body {
   transition: 0.3s;
 }
 .hello:hover {
-  background-color: orange !important;
+  background-color: #086AD8 !important;
 }
 
 @media (max-width: 990px) {
@@ -138,12 +156,12 @@ td {
 }
 
 tr:nth-child(even) {
-  background-color: #f6f6f6;
+  background-color: #0869d81b;
 }
 .startbtn .rounded-pill {
-  background-color: #ffa737;
+  background-color: #086AD8;
   transition: 0.3s;
 }
 .startbtn .rounded-pill:hover {
-  background-color: rgba(255, 166, 0, 0.656);
+  background-color: #0869d896;
 }

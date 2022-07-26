@@ -23,7 +23,6 @@ import Google from "./Images/powered_by_google.png";
 function Home() {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 2,
       slidesToSlide: 2,
@@ -48,15 +47,17 @@ function Home() {
   };
   return (
     <div style={{ marginTop: "100px" }}>
-      <div className="container py-5">
+      <div className="container pb-5">
         <div className="text-center pb-4">
-          <div style={{ fontSize: "45px" }}>Our SEO Plans</div>
-          <div style={{ fontSize: "22px" }}>
+          <div className="font-weight-bolder" style={{ fontSize: "45px" }}>
+            Our <span style={{ color: "#086AD8" }}>SEO</span> Plans
+          </div>
+          <div style={{ fontSize: "16px" }}>
             Choose the plan that right for you and let’s get started
           </div>
         </div>
 
-         {/*---------------------------------------------------------Our SEO Plans---------------------------------------------------------*/}
+        {/*---------------------------------------------------------Our SEO Plans---------------------------------------------------------*/}
         <div className="row mt-5">
           <div
             className="col-lg-3 col-md-6 col-12 justify-content-center d-flex py-4"
@@ -92,7 +93,8 @@ function Home() {
                 <div
                   className="btn btn-dark bg-transparent rounded-pill px-4 py-2 my-4"
                   style={{
-                    border: "2px solid black",
+                    border: "2px solid #086AD8",
+                    fontSize:"14px",
                     color: "black",
                     fontWeight: "500",
                   }}
@@ -137,7 +139,8 @@ function Home() {
                 <div
                   className="btn btn-dark bg-transparent rounded-pill px-4 py-2 my-4"
                   style={{
-                    border: "2px solid black",
+                    border: "2px solid #086AD8",
+                    fontSize:"14px",
                     color: "black",
                     fontWeight: "500",
                   }}
@@ -182,7 +185,8 @@ function Home() {
                 <div
                   className="btn btn-dark bg-transparent rounded-pill px-4 py-2 my-4"
                   style={{
-                    border: "2px solid black",
+                    border: "2px solid #086AD8",
+                    fontSize:"14px",
                     color: "black",
                     fontWeight: "500",
                   }}
@@ -227,7 +231,8 @@ function Home() {
                 <div
                   className="btn btn-dark bg-transparent rounded-pill px-4 py-2 my-4"
                   style={{
-                    border: "2px solid black",
+                    border: "2px solid #086AD8",
+                    fontSize:"14px",
                     color: "black",
                     fontWeight: "500",
                   }}
@@ -253,7 +258,6 @@ function Home() {
             <hr />
           </div>
         </div>
-        Our SEO Plans
         {/*---------------------------------------------------------FIRST HAND SEO ANALYSIS---------------------------------------------------------*/}
         <div className="row mt-lg-5 mt-4">
           <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
@@ -264,20 +268,20 @@ function Home() {
               FIRST HAND SEO ANALYSIS
             </div>
             <table>
-            {SEOAnalysis.map((e) => {
-              return (
-                <tr>
-                  <td>{e.name}</td>
-                  <td
-                    className=""
-                    style={{ float: "right", fontWeight: "normal" }}
-                  >
-                    {e.sign}
-                  </td>
-                </tr>
-              );
-            })}
-          </table>
+              {SEOAnalysis.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
+                      {e.sign}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
           </div>
 
           <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
@@ -312,20 +316,20 @@ function Home() {
               FIRST HAND SEO ANALYSIS
             </div>
             <table>
-            {SEOAnalysis.map((e) => {
-              return (
-                <tr>
-                  <td>{e.name}</td>
-                  <td
-                    className=""
-                    style={{ float: "right", fontWeight: "normal" }}
-                  >
-                    {e.sign}
-                  </td>
-                </tr>
-              );
-            })}
-          </table>
+              {SEOAnalysis.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
+                      {e.sign}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
           </div>
 
           <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
@@ -336,20 +340,20 @@ function Home() {
               FIRST HAND SEO ANALYSIS
             </div>
             <table>
-            {SEOAnalysis.map((e) => {
-              return (
-                <tr>
-                  <td>{e.name}</td>
-                  <td
-                    className=""
-                    style={{ float: "right", fontWeight: "normal" }}
-                  >
-                    {e.sign}
-                  </td>
-                </tr>
-              );
-            })}
-          </table>
+              {SEOAnalysis.map((e) => {
+                return (
+                  <tr>
+                    <td>{e.name}</td>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
+                      {e.sign}
+                    </td>
+                  </tr>
+                );
+              })}
+            </table>
           </div>
         </div>
 
@@ -643,7 +647,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign}
                       </td>
                     </tr>
@@ -665,7 +672,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign}
                       </td>
                     </tr>
@@ -687,7 +697,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign}
                       </td>
                     </tr>
@@ -709,7 +722,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign}
                       </td>
                     </tr>
@@ -731,7 +747,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign}
                       </td>
                     </tr>
@@ -760,7 +779,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign1}
                       </td>
                     </tr>
@@ -782,7 +804,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign1}
                       </td>
                     </tr>
@@ -804,7 +829,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign1}
                       </td>
                     </tr>
@@ -826,7 +854,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign1}
                       </td>
                     </tr>
@@ -848,7 +879,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign1}
                       </td>
                     </tr>
@@ -877,7 +911,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign2}
                       </td>
                     </tr>
@@ -898,7 +935,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign2}
                       </td>
                     </tr>
@@ -920,7 +960,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign2}
                       </td>
                     </tr>
@@ -942,7 +985,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign2}
                       </td>
                     </tr>
@@ -964,7 +1010,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign2}
                       </td>
                     </tr>
@@ -993,7 +1042,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign3}
                       </td>
                     </tr>
@@ -1015,7 +1067,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign3}
                       </td>
                     </tr>
@@ -1037,7 +1092,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign3}
                       </td>
                     </tr>
@@ -1059,7 +1117,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign3}
                       </td>
                     </tr>
@@ -1081,7 +1142,10 @@ function Home() {
                   return (
                     <tr>
                       <td>{e.name}</td>
-                      <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                      <td
+                        className=""
+                        style={{ float: "right", fontWeight: "normal" }}
+                      >
                         {e.sign3}
                       </td>
                     </tr>
@@ -1121,7 +1185,10 @@ function Home() {
                 return (
                   <tr>
                     <td>{e.name}</td>
-                    <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
                       {e.sign}
                     </td>
                   </tr>
@@ -1142,7 +1209,10 @@ function Home() {
                 return (
                   <tr>
                     <td>{e.name}</td>
-                    <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
                       {e.sign}
                     </td>
                   </tr>
@@ -1163,7 +1233,10 @@ function Home() {
                 return (
                   <tr>
                     <td>{e.name}</td>
-                    <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
                       {e.sign}
                     </td>
                   </tr>
@@ -1184,7 +1257,10 @@ function Home() {
                 return (
                   <tr>
                     <td>{e.name}</td>
-                    <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
                       {e.sign}
                     </td>
                   </tr>
@@ -1223,7 +1299,10 @@ function Home() {
                 return (
                   <tr>
                     <td>{e.name}</td>
-                    <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
                       {e.sign}
                     </td>
                   </tr>
@@ -1244,7 +1323,10 @@ function Home() {
                 return (
                   <tr>
                     <td>{e.name}</td>
-                    <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
                       {e.sign}
                     </td>
                   </tr>
@@ -1265,7 +1347,10 @@ function Home() {
                 return (
                   <tr>
                     <td>{e.name}</td>
-                    <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
                       {e.sign}
                     </td>
                   </tr>
@@ -1286,7 +1371,10 @@ function Home() {
                 return (
                   <tr>
                     <td>{e.name}</td>
-                    <td className="" style={{ float: "right", fontWeight:"normal" }}>
+                    <td
+                      className=""
+                      style={{ float: "right", fontWeight: "normal" }}
+                    >
                       {e.sign}
                     </td>
                   </tr>
