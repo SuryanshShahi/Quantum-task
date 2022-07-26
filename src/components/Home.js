@@ -94,7 +94,7 @@ function Home() {
                   className="btn btn-dark bg-transparent rounded-pill px-4 py-2 my-4"
                   style={{
                     border: "2px solid #086AD8",
-                    fontSize:"14px",
+                    fontSize: "14px",
                     color: "black",
                     fontWeight: "500",
                   }}
@@ -140,7 +140,7 @@ function Home() {
                   className="btn btn-dark bg-transparent rounded-pill px-4 py-2 my-4"
                   style={{
                     border: "2px solid #086AD8",
-                    fontSize:"14px",
+                    fontSize: "14px",
                     color: "black",
                     fontWeight: "500",
                   }}
@@ -186,7 +186,7 @@ function Home() {
                   className="btn btn-dark bg-transparent rounded-pill px-4 py-2 my-4"
                   style={{
                     border: "2px solid #086AD8",
-                    fontSize:"14px",
+                    fontSize: "14px",
                     color: "black",
                     fontWeight: "500",
                   }}
@@ -232,7 +232,7 @@ function Home() {
                   className="btn btn-dark bg-transparent rounded-pill px-4 py-2 my-4"
                   style={{
                     border: "2px solid #086AD8",
-                    fontSize:"14px",
+                    fontSize: "14px",
                     color: "black",
                     fontWeight: "500",
                   }}
@@ -244,7 +244,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="row mt-3">
+        <div className="row mt-3 hrtag">
           <div className="col-lg-3 col-md-6 col-12">
             <hr />
           </div>
@@ -265,7 +265,7 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              FIRST HAND SEO ANALYSIS
+              FIRST HAND <span style={{ color: "#086AD8" }}>SEO ANALYSIS</span>
             </div>
             <table>
               {SEOAnalysis.map((e) => {
@@ -289,7 +289,7 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              FIRST HAND SEO ANALYSIS
+              FIRST HAND <span style={{ color: "#086AD8" }}>SEO ANALYSIS</span>
             </div>
             <table>
               {SEOAnalysis.map((e) => {
@@ -313,7 +313,7 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              FIRST HAND SEO ANALYSIS
+              FIRST HAND <span style={{ color: "#086AD8" }}>SEO ANALYSIS</span>
             </div>
             <table>
               {SEOAnalysis.map((e) => {
@@ -337,7 +337,7 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              FIRST HAND SEO ANALYSIS
+              FIRST HAND <span style={{ color: "#086AD8" }}>SEO ANALYSIS</span>
             </div>
             <table>
               {SEOAnalysis.map((e) => {
@@ -357,7 +357,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="row mt-3">
+        <div className="row mt-3 hrtag">
           <div className="col-lg-3 col-md-6 col-12">
             <hr />
           </div>
@@ -379,7 +379,8 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              ON-PAGE OPTIMIZATION ACTIVITIES
+              ON-PAGE <span style={{ color: "#086AD8" }}>OPTIMIZATION</span>{" "}
+              ACTIVITIES
             </div>
             <table>
               {OnPage.map((e) => {
@@ -410,7 +411,8 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              ON-PAGE OPTIMIZATION ACTIVITIES
+              ON-PAGE <span style={{ color: "#086AD8" }}>OPTIMIZATION</span>{" "}
+              ACTIVITIES
             </div>
             <table>
               {OnPage.map((e) => {
@@ -440,7 +442,8 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              ON-PAGE OPTIMIZATION ACTIVITIES
+              ON-PAGE <span style={{ color: "#086AD8" }}>OPTIMIZATION</span>{" "}
+              ACTIVITIES
             </div>
             <table>
               {OnPage.map((e) => {
@@ -470,7 +473,8 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              ON-PAGE OPTIMIZATION ACTIVITIES
+              ON-PAGE <span style={{ color: "#086AD8" }}>OPTIMIZATION</span>{" "}
+              ACTIVITIES
             </div>
             <table>
               {OnPage.map((e) => {
@@ -496,7 +500,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row hrtag">
           <div className="col-lg-3 col-md-6 col-12">
             <hr />
           </div>
@@ -518,7 +522,8 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              OFF-PAGE OPTIMIZATION ACTIVITIES
+              OFF-PAGE <span style={{ color: "#086AD8" }}>OPTIMIZATION</span>{" "}
+              ACTIVITIES
             </div>
             <table>
               {OffPage.map((e) => {
@@ -542,7 +547,8 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              OFF-PAGE OPTIMIZATION ACTIVITIES
+              OFF-PAGE <span style={{ color: "#086AD8" }}>OPTIMIZATION</span>{" "}
+              ACTIVITIES
             </div>
             <table>
               {OffPage.map((e) => {
@@ -566,7 +572,8 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              OFF-PAGE OPTIMIZATION ACTIVITIES
+              OFF-PAGE <span style={{ color: "#086AD8" }}>OPTIMIZATION</span>{" "}
+              ACTIVITIES
             </div>
             <table>
               {OffPage.map((e) => {
@@ -590,7 +597,8 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              OFF-PAGE OPTIMIZATION ACTIVITIES
+              OFF-PAGE <span style={{ color: "#086AD8" }}>OPTIMIZATION</span>{" "}
+              ACTIVITIES
             </div>
             <table>
               {OffPage.map((e) => {
@@ -610,7 +618,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row hrtag">
           <div className="col-lg-3 col-md-6 col-12">
             <hr />
           </div>
@@ -632,7 +640,7 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              SMO ACTIVITIES
+              SMO <span style={{ color: "#086AD8" }}>ACTIVITIES</span>
             </div>
             <div>
               {" "}
@@ -641,6 +649,10 @@ function Home() {
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 FACEBOOK
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Facebook.map((e) => {
@@ -659,13 +671,17 @@ function Home() {
               </table>
             </div>
 
-            <div>
+            <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 INSTAGRAM
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Instagram.map((e) => {
@@ -684,13 +700,17 @@ function Home() {
               </table>
             </div>
 
-            <div>
+            <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 TWITTER
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Twitter.map((e) => {
@@ -709,13 +729,17 @@ function Home() {
               </table>
             </div>
 
-            <div>
+            <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 PINTEREST
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Printrest.map((e) => {
@@ -734,13 +758,17 @@ function Home() {
               </table>
             </div>
 
-            <div>
+            <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 LINKEDIN
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Linkedin.map((e) => {
@@ -764,7 +792,7 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              SMO ACTIVITIES
+              SMO <span style={{ color: "#086AD8" }}>ACTIVITIES</span>
             </div>
             <div>
               {" "}
@@ -773,6 +801,10 @@ function Home() {
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 FACEBOOK
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Facebook.map((e) => {
@@ -791,13 +823,17 @@ function Home() {
               </table>
             </div>
 
-            <div>
+            <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 INSTAGRAM
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Instagram.map((e) => {
@@ -816,13 +852,17 @@ function Home() {
               </table>
             </div>
 
-            <div>
+            <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 TWITTER
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Twitter.map((e) => {
@@ -841,13 +881,17 @@ function Home() {
               </table>
             </div>
 
-            <div>
+            <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 PINTEREST
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Printrest.map((e) => {
@@ -866,13 +910,17 @@ function Home() {
               </table>
             </div>
 
-            <div>
+            <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 LINKEDIN
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Linkedin.map((e) => {
@@ -896,7 +944,7 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              SMO ACTIVITIES
+              SMO <span style={{ color: "#086AD8" }}>ACTIVITIES</span>
             </div>
             <div>
               {" "}
@@ -905,6 +953,10 @@ function Home() {
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 FACEBOOK
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Facebook.map((e) => {
@@ -922,13 +974,17 @@ function Home() {
                 })}
               </table>
             </div>
-            <div>
+             <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 INSTAGRAM
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Instagram.map((e) => {
@@ -947,13 +1003,17 @@ function Home() {
               </table>
             </div>
 
-            <div>
+             <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 TWITTER
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Twitter.map((e) => {
@@ -972,13 +1032,17 @@ function Home() {
               </table>
             </div>
 
-            <div>
+             <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 PINTEREST
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Printrest.map((e) => {
@@ -997,13 +1061,17 @@ function Home() {
               </table>
             </div>
 
-            <div>
+             <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 LINKEDIN
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Linkedin.map((e) => {
@@ -1027,7 +1095,7 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              SMO ACTIVITIES
+              SMO <span style={{ color: "#086AD8" }}>ACTIVITIES</span>
             </div>
             <div>
               {" "}
@@ -1036,6 +1104,10 @@ function Home() {
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 FACEBOOK
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Facebook.map((e) => {
@@ -1054,13 +1126,17 @@ function Home() {
               </table>
             </div>
 
-            <div>
+             <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 INSTAGRAM
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Instagram.map((e) => {
@@ -1079,13 +1155,17 @@ function Home() {
               </table>
             </div>
 
-            <div>
+             <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 TWITTER
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Twitter.map((e) => {
@@ -1104,13 +1184,17 @@ function Home() {
               </table>
             </div>
 
-            <div>
+             <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 PINTEREST
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Printrest.map((e) => {
@@ -1129,13 +1213,17 @@ function Home() {
               </table>
             </div>
 
-            <div>
+             <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
                 style={{ fontWeight: "lighter", fontSize: "17px" }}
               >
                 LINKEDIN
+                <hr
+                  className="m-0 mx-auto w-25"
+                  style={{ color: "#086AD8", height: "1.5px" }}
+                />
               </div>
               <table>
                 {Linkedin.map((e) => {
@@ -1156,7 +1244,7 @@ function Home() {
           </div>{" "}
         </div>
 
-        <div className="row">
+        <div className="row hrtag">
           <div className="col-lg-3 col-md-6 col-12">
             <hr />
           </div>
@@ -1178,7 +1266,7 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              REPORTS
+              REP<span style={{ color: "#086AD8" }}>ORTS</span>
             </div>
             <table>
               {Reports.map((e) => {
@@ -1202,7 +1290,7 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              REPORTS
+              REP<span style={{ color: "#086AD8" }}>ORTS</span>
             </div>
             <table>
               {Reports.map((e) => {
@@ -1226,7 +1314,7 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              REPORTS
+              REP<span style={{ color: "#086AD8" }}>ORTS</span>
             </div>
             <table>
               {Reports.map((e) => {
@@ -1250,7 +1338,7 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              REPORTS
+              REP<span style={{ color: "#086AD8" }}>ORTS</span>
             </div>
             <table>
               {Reports.map((e) => {
@@ -1270,7 +1358,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row hrtag">
           <div className="col-lg-3 col-md-6 col-12">
             <hr />
           </div>
@@ -1292,7 +1380,7 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              CUSTOMER SUPPORT
+              CUSTOMER <span style={{ color: "#086AD8" }}>SUPPORT</span>
             </div>
             <table>
               {CustomerReport.map((e) => {
@@ -1316,7 +1404,7 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              CUSTOMER SUPPORT
+              CUSTOMER <span style={{ color: "#086AD8" }}>SUPPORT</span>
             </div>
             <table>
               {CustomerReport.map((e) => {
@@ -1340,7 +1428,7 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              CUSTOMER SUPPORT
+              CUSTOMER <span style={{ color: "#086AD8" }}>SUPPORT</span>
             </div>
             <table>
               {CustomerReport.map((e) => {
@@ -1364,7 +1452,7 @@ function Home() {
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
             >
-              CUSTOMER SUPPORT
+              CUSTOMER <span style={{ color: "#086AD8" }}>SUPPORT</span>
             </div>
             <table>
               {CustomerReport.map((e) => {

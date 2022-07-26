@@ -134,7 +134,7 @@ body {
 }
 
 @media (max-width: 990px) {
-  hr {
+  .hrtag {
     display: none;
   }
   .active.navbar a {
