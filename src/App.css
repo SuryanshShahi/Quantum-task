@@ -30,7 +30,7 @@ body {
 /* -----------------navbar------------------ */
 
 .form-control:focus {
-  border-color: #086AD8;
+  border-color: #086ad8;
   box-shadow: none;
   outline: none;
 }
@@ -40,12 +40,12 @@ body {
   border-radius: 50px;
   background-color: #c3dcf888;
   line-height: 48px;
-  color: #086AD8;
+  color: #086ad8;
   transition: 0.7s;
   cursor: pointer;
 }
 .contact:hover {
-  background-color: #086AD8;
+  background-color: #086ad8;
   color: white;
 }
 .navbar {
@@ -62,7 +62,7 @@ body {
     transform: translateY(0);
   }
 }
-.navbar-brand{
+.navbar-brand {
   padding: 0;
 }
 .active.navbar a {
@@ -75,16 +75,16 @@ body {
   font-size: 16px;
 }
 .navbar-nav .active {
-  color: #086AD8 !important;
+  color: #086ad8 !important;
   font-weight: 500;
 }
 .nav-link:hover {
-  color: #086AD8 !important;
+  color: #086ad8 !important;
   z-index: 1 !important;
   font-weight: 500;
 }
 .B.active {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .all {
@@ -118,19 +118,49 @@ body {
 }
 .centertag a:hover {
   cursor: pointer;
-  color: #086AD8 !important;
+  color: #086ad8 !important;
 }
 .dropdownHover:hover {
   cursor: pointer;
   color: white;
   transition: 0.3s;
-  background-color: #086AD8;
+  background-color: #086ad8;
 }
 
 /* -----------------Footer------------------ */
+#footer {
+  background: url("./components/Images/footerbg.jpg") no-repeat;
+  background-size: cover;
+}
+.socialicons .fa:hover {
+  transition: 0.5s;
+  background: #086ad8 !important;
+  color: white !important;
+  cursor: pointer;
+  border-color: #086ad8 !important;
+}
+.slider button {
+  border: none !important;
+  padding: 1.8px !important;
+  background-color: #eee;
+  outline: none !important;
+  width: 50px !important;
+  margin: 5px !important;
+}
+[type="button"].active {
+  background-color: black;
+}
+.carousel-indicators {
+  width: 150px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
 .serviceAreas:hover {
   cursor: pointer;
-  color: #086AD8;
+  color: #086ad8;
 }
 
 .backtotop {
@@ -147,10 +177,11 @@ body {
   width: 50px;
   border-radius: 5px 5px 0px 0px;
   line-height: 40px;
+  background-color: #086ad8;
   transition: 0.3s;
 }
 .hello:hover {
-  background-color: #086AD8 !important;
+  background-color: #0869d8b8 !important;
 }
 
 /* --------------------Home------------------- */
@@ -168,14 +199,12 @@ tr:nth-child(even) {
   background-color: #0869d81b;
 }
 .startbtn .rounded-pill {
-  background-color: #086AD8;
+  background-color: #086ad8;
   transition: 0.3s;
 }
 .startbtn .rounded-pill:hover {
   background-color: #0869d896;
 }
-
-
 
 /* --------------------------------------------- */
 @media (max-width: 990px) {

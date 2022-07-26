@@ -69,7 +69,7 @@ function Navbar() {
               aria-label="Toggle navigation"
             >
               <span
-                className="fa fa-bars border-0 "
+                className="fa fa-bars fa-lg border-0 "
                 style={{ outline: "none" }}
               ></span>
             </button>
@@ -290,9 +290,7 @@ function Navbar() {
                   </a>
                 </li>
                 <li className="nav-item pl-lg-3 mx-lg-0 mx-5 mb-lg-0 mb-3">
-                  <div className="btn btn-primary">
-                    Free Consultation
-                  </div>
+                  <div className="btn btn-primary" style={{width:"100%"}}>Free Consultation</div>
                 </li>
               </ul>
             </div>
@@ -365,8 +363,8 @@ function Navbar() {
           href="#top"
           className={
             back
-              ? "back active fa fa-angle-up bg-dark position-absolute text-decoration-none hello text-white text-center"
-              : "back fa fa-angle-up bg-dark position-absolute text-decoration-none hello text-white text-center d-none"
+              ? "back active fa fa-angle-up position-absolute text-decoration-none hello text-white text-center"
+              : "back fa fa-angle-up position-absolute text-decoration-none hello text-white text-center d-none"
           }
         >
           {" "}
@@ -415,7 +413,7 @@ function Navbar() {
                         </div>
                       </div>
                       <br></br>
-                    
+
                       <div className="d-flex">
                         <div className="fa fa-envelope px-3 fa-lg contact text-center mr-3"></div>
                         <div>
@@ -427,7 +425,7 @@ function Navbar() {
                       </div>
                       <br></br>
                       <br></br>
-                     
+
                       <div className="d-flex">
                         <div className="fa fa-mobile-phone fa-2x contact text-center mr-3"></div>
                         <div>
