@@ -40,9 +40,10 @@ function Navbar() {
           }
         >
           <div className="container-fluid mx-5">
-            <NavLink
+            <a
               className="navbar-brand mt-lg-1"
-              to="https://quantumitinnovation.com/"
+              target="_blank"
+              href="https://quantumitinnovation.com/"
             >
               {!isActive ? (
                 <img
@@ -57,7 +58,7 @@ function Navbar() {
                   style={{ width: "160px", height: "70px" }}
                 />
               )}
-            </NavLink>
+            </a>
             <button
               className="navbar-toggler"
               type="button"
@@ -290,7 +291,9 @@ function Navbar() {
                   </a>
                 </li>
                 <li className="nav-item pl-lg-3 mx-lg-0 mx-5 mb-lg-0 mb-3">
-                  <div className="btn btn-primary" style={{width:"100%"}}>Free Consultation</div>
+                  <div className="btn btn-primary" style={{ width: "100%" }}>
+                    Free Consultation
+                  </div>
                 </li>
               </ul>
             </div>
