@@ -39,7 +39,7 @@ function Navbar() {
               : "navbar navbar-expand-lg bg-transparent"
           }
         >
-          <div className="container-fluid mx-5">
+          <div className="container-fluid mx-lg-5">
             <a
               className="navbar-brand mt-lg-1"
               target="_blank"
@@ -62,7 +62,7 @@ function Navbar() {
             <button
               className="navbar-toggler"
               type="button"
-              style={{ zIndex: "1", background: "white" }}
+              style={{ zIndex: "1"}}
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent"
