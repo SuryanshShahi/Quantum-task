@@ -1,16 +1,16 @@
 export const dropdown = [
-  "Digital Marketing",
-  "Search Engine Optimization",
-  "App Store Optimization",
-  "Online Reputation Management",
-  "Small SEO Business",
-  "E-commerce SEO",
-  "D & R Oriented Local SEO",
-  "White Label SEO",
-  "YouTube Optimization",
-  "Web & Apps Development",
-  "Paid Marketing",
-  "Cannabis Industry",
+  { id: 1, name: "Digital Marketing" },
+  { id: 2, name: "Search Engine Optimization" },
+  { id: 3, name: "App Store Optimization" },
+  { id: 4, name: "Online Reputation Management" },
+  { id: 5, name: "Small SEO Business" },
+  { id: 6, name: "E-commerce SEO" },
+  { id: 7, name: "D & R Oriented Local SEO" },
+  { id: 8, name: "White Label SEO" },
+  { id: 9, name: "YouTube Optimization" },
+  { id: 10, name: "Web & Apps Development" },
+  { id: 11, name: "Paid Marketing" },
+  { id: 12, name: "Cannabis Industry" },
 ];
 
 export const SEOAnalysis = [
@@ -393,9 +393,9 @@ export const ServiceAreas = [
 ];
 
 export const FooterBanner = [
-  "https://quantumitinnovation.com/assets/images/blog/1.png",
-  "https://quantumitinnovation.com/assets/images/blog/2.png",
-  "https://quantumitinnovation.com/assets/images/blog/3.png",
-  "https://quantumitinnovation.com/assets/images/blog/4.png",
-  "https://quantumitinnovation.com/assets/images/blog/5.png",
+  { id: 1, image: "https://quantumitinnovation.com/assets/images/blog/1.png" },
+  { id: 2, image: "https://quantumitinnovation.com/assets/images/blog/2.png" },
+  { id: 3, image: "https://quantumitinnovation.com/assets/images/blog/3.png" },
+  { id: 4, image: "https://quantumitinnovation.com/assets/images/blog/4.png" },
+  { id: 5, image: "https://quantumitinnovation.com/assets/images/blog/5.png" },
 ];

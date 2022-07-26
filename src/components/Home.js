@@ -267,7 +267,7 @@ function Home() {
             <table>
               {SEOAnalysis.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -291,7 +291,7 @@ function Home() {
             <table>
               {SEOAnalysis.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -315,7 +315,7 @@ function Home() {
             <table>
               {SEOAnalysis.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -339,7 +339,7 @@ function Home() {
             <table>
               {SEOAnalysis.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -382,7 +382,7 @@ function Home() {
             <table>
               {OnPage.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -414,7 +414,7 @@ function Home() {
             <table>
               {OnPage.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -445,7 +445,7 @@ function Home() {
             <table>
               {OnPage.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -476,7 +476,7 @@ function Home() {
             <table>
               {OnPage.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -525,7 +525,7 @@ function Home() {
             <table>
               {OffPage.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -550,7 +550,7 @@ function Home() {
             <table>
               {OffPage.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -575,7 +575,7 @@ function Home() {
             <table>
               {OffPage.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -600,7 +600,7 @@ function Home() {
             <table>
               {OffPage.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -654,7 +654,7 @@ function Home() {
               <table>
                 {Facebook.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -683,7 +683,7 @@ function Home() {
               <table>
                 {Instagram.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -712,7 +712,7 @@ function Home() {
               <table>
                 {Twitter.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -741,7 +741,7 @@ function Home() {
               <table>
                 {Printrest.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -770,7 +770,7 @@ function Home() {
               <table>
                 {Linkedin.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -806,7 +806,7 @@ function Home() {
               <table>
                 {Facebook.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -835,7 +835,7 @@ function Home() {
               <table>
                 {Instagram.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -864,7 +864,7 @@ function Home() {
               <table>
                 {Twitter.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -893,7 +893,7 @@ function Home() {
               <table>
                 {Printrest.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -922,7 +922,7 @@ function Home() {
               <table>
                 {Linkedin.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -958,7 +958,7 @@ function Home() {
               <table>
                 {Facebook.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -986,7 +986,7 @@ function Home() {
               <table>
                 {Instagram.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -1015,7 +1015,7 @@ function Home() {
               <table>
                 {Twitter.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -1044,7 +1044,7 @@ function Home() {
               <table>
                 {Printrest.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -1073,7 +1073,7 @@ function Home() {
               <table>
                 {Linkedin.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -1109,7 +1109,7 @@ function Home() {
               <table>
                 {Facebook.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -1138,7 +1138,7 @@ function Home() {
               <table>
                 {Instagram.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -1167,7 +1167,7 @@ function Home() {
               <table>
                 {Twitter.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -1196,7 +1196,7 @@ function Home() {
               <table>
                 {Printrest.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -1225,7 +1225,7 @@ function Home() {
               <table>
                 {Linkedin.map((e) => {
                   return (
-                    <tr>
+                    <tr key={e.id}>
                       <td>{e.name}</td>
                       <td
                         className=""
@@ -1268,7 +1268,7 @@ function Home() {
             <table>
               {Reports.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -1292,7 +1292,7 @@ function Home() {
             <table>
               {Reports.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -1316,7 +1316,7 @@ function Home() {
             <table>
               {Reports.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -1340,7 +1340,7 @@ function Home() {
             <table>
               {Reports.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -1382,7 +1382,7 @@ function Home() {
             <table>
               {CustomerReport.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -1406,7 +1406,7 @@ function Home() {
             <table>
               {CustomerReport.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -1430,7 +1430,7 @@ function Home() {
             <table>
               {CustomerReport.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -1454,7 +1454,7 @@ function Home() {
             <table>
               {CustomerReport.map((e) => {
                 return (
-                  <tr>
+                  <tr key={e.id}>
                     <td>{e.name}</td>
                     <td
                       className=""
@@ -1549,6 +1549,7 @@ function Home() {
               {testimonials.map((e) => {
                 return (
                   <div
+                    key={e.id}
                     className="border-0 my-2 mx-2 rounded p-lg-3 p-2"
                     style={{
                       boxShadow: "#80808069 0px 0px 7px 0.5px",

@@ -168,7 +168,7 @@ function Footer() {
                   {FooterBanner.map((e) => {
                     return (
                       <Carousel.Item interval="3000" key={e.id}>
-                        <img src={e} className="img-fluid" alt="data"></img>
+                        <img src={e.image} className="img-fluid" alt="data"></img>
                       </Carousel.Item>
                     );
                   })}

@@ -49,8 +49,8 @@ body {
   color: white;
 }
 .navbar {
-  height: 80px;
-  transition: 0.3s;
+  /* height: 80px; */
+  transition: 0.9s;
   /* animation: 1.8s ease-out 0s 1 fadeInDown;
   transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1); */
 }
@@ -213,6 +213,10 @@ tr:nth-child(even) {
   }
   .active.navbar a {
     color: white;
+  }
+  .Qlogo {
+    width: 100px !important;
+    height: 50px !important;
   }
 }
 

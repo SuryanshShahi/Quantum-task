@@ -8,6 +8,7 @@ function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const [B, setHeader] = useState(false);
   const [back, setBack] = useState(false);
+  const [bars, setBars] = useState(false);
   const [isActive, setActive] = useState(false);
 
   const changeBackground = () => {
@@ -15,11 +16,13 @@ function Navbar() {
       setNavbar(true);
       setHeader(true);
       setBack(true);
+      setBars(true);
       setActive(true);
     } else {
       setNavbar(false);
       setHeader(false);
       setBack(false);
+      setBars(false);
       setActive(false);
     }
   };
@@ -44,22 +47,22 @@ function Navbar() {
               <div className="d-flex mx-3 align-items-center">
                 {" "}
                 <a
-                  className="navbar-brand mt-lg-1"
+                  className="navbar-brand"
                   href="https://quantumitinnovation.com/"
                 >
                   {!isActive ? (
                     <img
                       alt="data"
                       src={logoWhite}
-                      className="img-fluid my-lg-3 py-1"
-                      style={{ width: "160px", height: "70px" }}
+                      className="img-fluid Qlogo py-1"
+                      style={{ width: "140px", height: "60px" }}
                     />
                   ) : (
                     <img
                       alt="data"
                       src={logo}
-                      className="img-fluid my-lg-3 py-1"
-                      style={{ width: "160px", height: "70px" }}
+                      className="img-fluid Qlogo py-1"
+                      style={{ width: "140px", height: "60px" }}
                     />
                   )}
                 </a>
@@ -75,7 +78,11 @@ function Navbar() {
                     aria-label="Toggle navigation"
                   >
                     <span
-                      className="fa fa-bars fa-lg border-0 "
+                      className={
+                        bars
+                          ? "fa fa-bars fa-lg border-0"
+                          : "fa fa-bars text-white fa-lg border-0"
+                      }
                       style={{ outline: "none" }}
                     ></span>
                   </button>
@@ -113,12 +120,14 @@ function Navbar() {
                           <div className="text-dark">
                             <b className="pl-3">Digital Marketing</b>
 
-                            {dropdown.map((data) => {
-                              console.log(data);
+                            {dropdown.map((e) => {
                               return (
-                                <div className="py-1 dropdownHover pl-3">
+                                <div
+                                  className="py-1 dropdownHover pl-3"
+                                  key={e.id}
+                                >
                                   <div className="fa fa-angle-right pr-2"></div>
-                                  {data}
+                                  {e.name}
                                 </div>
                               );
                             })}
@@ -128,12 +137,14 @@ function Navbar() {
                           <div className="text-dark">
                             <b className="pl-3">Web & Apps Development</b>
 
-                            {dropdown.map((data) => {
-                              console.log(data);
+                            {dropdown.map((e) => {
                               return (
-                                <div className="py-1 dropdownHover pl-3">
+                                <div
+                                  className="py-1 dropdownHover pl-3"
+                                  key={e.id}
+                                >
                                   <div className="fa fa-angle-right pr-2"></div>
-                                  {data}
+                                  {e.name}
                                 </div>
                               );
                             })}
@@ -143,12 +154,14 @@ function Navbar() {
                           <div className="text-dark">
                             <b className="pl-3">Paid Marketing</b>
 
-                            {dropdown.map((data) => {
-                              console.log(data);
+                            {dropdown.map((e) => {
                               return (
-                                <div className="py-1 dropdownHover pl-3">
+                                <div
+                                  className="py-1 dropdownHover pl-3"
+                                  key={e.id}
+                                >
                                   <div className="fa fa-angle-right pr-2"></div>
-                                  {data}
+                                  {e.name}
                                 </div>
                               );
                             })}
@@ -177,12 +190,14 @@ function Navbar() {
                           <div className="text-dark">
                             <b className="pl-3">Digital Marketing</b>
 
-                            {dropdown.map((data) => {
-                              console.log(data);
+                            {dropdown.map((e) => {
                               return (
-                                <div className="py-1 dropdownHover pl-3">
+                                <div
+                                  className="py-1 dropdownHover pl-3"
+                                  key={e.id}
+                                >
                                   <div className="fa fa-angle-right pr-2"></div>
-                                  {data}
+                                  {e.name}
                                 </div>
                               );
                             })}
@@ -192,12 +207,14 @@ function Navbar() {
                           <div className="text-dark">
                             <b className="pl-3">Web & Apps Development</b>
 
-                            {dropdown.map((data) => {
-                              console.log(data);
+                            {dropdown.map((e) => {
                               return (
-                                <div className="py-1 dropdownHover pl-3">
+                                <div
+                                  className="py-1 dropdownHover pl-3"
+                                  key={e.id}
+                                >
                                   <div className="fa fa-angle-right pr-2"></div>
-                                  {data}
+                                  {e.name}
                                 </div>
                               );
                             })}
@@ -207,12 +224,14 @@ function Navbar() {
                           <div className="text-dark">
                             <b className="pl-3">Paid Marketing</b>
 
-                            {dropdown.map((data) => {
-                              console.log(data);
+                            {dropdown.map((e) => {
                               return (
-                                <div className="py-1 dropdownHover pl-3">
+                                <div
+                                  className="py-1 dropdownHover pl-3"
+                                  key={e.id}
+                                >
                                   <div className="fa fa-angle-right pr-2"></div>
-                                  {data}
+                                  {e.name}
                                 </div>
                               );
                             })}
@@ -222,12 +241,14 @@ function Navbar() {
                           <div className="text-dark">
                             <b className="pl-3">Others</b>
 
-                            {dropdown.map((data) => {
-                              console.log(data);
+                            {dropdown.map((e) => {
                               return (
-                                <div className="py-1 dropdownHover pl-3">
+                                <div
+                                  className="py-1 dropdownHover pl-3"
+                                  key={e.id}
+                                >
                                   <div className="fa fa-angle-right pr-2"></div>
-                                  {data}
+                                  {e.name}
                                 </div>
                               );
                             })}
@@ -405,7 +426,6 @@ function Navbar() {
                 <iframe
                   className="map"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9877019028863!2d77.377948115009!3d28.63013068241875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceffd525cc01b%3A0x2855561fbab51402!2sQuantum%20IT%20Innovation!5e0!3m2!1sen!2sbg!4v1658829798658!5m2!1sen!2sbg"
-                  allowfullscreen=""
                   loading="lazy"
                   title="map"
                   style={{ height: "400px" }}
@@ -471,16 +491,13 @@ function Navbar() {
                         <form>
                           <div className="row">
                             <div className="col-lg-6 col-md-6">
-                              <div class="mb-3">
-                                <label
-                                  for="input"
-                                  class="form-label font-weight-bold"
-                                >
+                              <div className="mb-3">
+                                <label className="form-label font-weight-bold">
                                   Full Name:
                                 </label>
                                 <input
                                   type="text"
-                                  class="form-control"
+                                  className="form-control"
                                   id="input"
                                   placeholder="Enter Full Name"
                                   required
@@ -488,16 +505,13 @@ function Navbar() {
                               </div>
                             </div>
                             <div className="col-lg-6 col-md-6">
-                              <div class="mb-3">
-                                <label
-                                  for="input1"
-                                  class="form-label font-weight-bold"
-                                >
+                              <div className="mb-3">
+                                <label className="form-label font-weight-bold">
                                   Phone:
                                 </label>
                                 <input
                                   type="tel"
-                                  class="form-control"
+                                  className="form-control"
                                   id="input1"
                                   placeholder="Enter Phone No."
                                   required
@@ -505,30 +519,24 @@ function Navbar() {
                               </div>
                             </div>
                           </div>
-                          <div class="mb-3">
-                            <label
-                              for="input2"
-                              class="form-label font-weight-bold"
-                            >
+                          <div className="mb-3">
+                            <label className="form-label font-weight-bold">
                               Email:
                             </label>
                             <input
                               type="email"
-                              class="form-control"
+                              className="form-control"
                               id="input2"
                               placeholder="Enter Email"
                               required
                             />
                           </div>
-                          <div class="mb-3">
-                            <label
-                              for="textarea1"
-                              class="form-label font-weight-bold"
-                            >
+                          <div className="mb-3">
+                            <label className="form-label font-weight-bold">
                               Message:
                             </label>
                             <textarea
-                              class="form-control"
+                              className="form-control"
                               id="textarea1"
                               rows="3"
                             ></textarea>
