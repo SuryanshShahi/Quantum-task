@@ -39,263 +39,270 @@ function Navbar() {
               : "navbar navbar-expand-lg bg-transparent"
           }
         >
-          <div className="container-fluid mx-lg-5">
-            <a
-              className="navbar-brand mt-lg-1"
-              target="_blank"
-              href="https://quantumitinnovation.com/"
-            >
-              {!isActive ? (
-                <img
-                  src={logoWhite}
-                  className="img-fluid my-lg-3 py-1"
-                  style={{ width: "160px", height: "70px" }}
-                />
-              ) : (
-                <img
-                  src={logo}
-                  className="img-fluid my-lg-3 py-1"
-                  style={{ width: "160px", height: "70px" }}
-                />
-              )}
-            </a>
-            <button
-              className="navbar-toggler"
-              type="button"
-              style={{ zIndex: "1"}}
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span
-                className="fa fa-bars fa-lg border-0 "
-                style={{ outline: "none" }}
-              ></span>
-            </button>
-            <div
-              className="collapse navbar-collapse"
-              id="navbarSupportedContent"
-            >
-              <ul
-                className={
-                  B
-                    ? "B active ml-auto navbar-nav pl-lg-5 mb-2 mb-lg-0"
-                    : "B navbar-nav ml-auto pl-lg-5 mb-2 mb-lg-0"
-                }
+          <div className="mx-lg-5 d-flex" style={{ width: "100%" }}>
+            <div className="navbarinline" style={{ width: "100%" }}>
+              <div className="d-flex mx-3 align-items-center">
+                {" "}
+                <a
+                  className="navbar-brand mt-lg-1"
+                  target="_blank"
+                  href="https://quantumitinnovation.com/"
+                >
+                  {!isActive ? (
+                    <img
+                      src={logoWhite}
+                      className="img-fluid my-lg-3 py-1"
+                      style={{ width: "160px", height: "70px" }}
+                    />
+                  ) : (
+                    <img
+                      src={logo}
+                      className="img-fluid my-lg-3 py-1"
+                      style={{ width: "160px", height: "70px" }}
+                    />
+                  )}
+                </a>
+                <div className="ml-auto">
+                  <button
+                    className="navbar-toggler"
+                    type="button"
+                    style={{ zIndex: "1" }}
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span
+                      className="fa fa-bars fa-lg border-0 "
+                      style={{ outline: "none" }}
+                    ></span>
+                  </button>
+                </div>
+              </div>
+              <div
+                className="collapse navbar-collapse"
+                id="navbarSupportedContent"
               >
-                <li className="active nav-item pl-3">
-                  <NavLink
-                    to="/"
-                    exact
-                    className="nav-link d-flex align-items-center"
-                  >
-                    Services<span className="fa fa-angle-down pl-1"></span>
-                  </NavLink>
-                  <div className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4 w-100">
-                    <div
-                      className="row mr-lg-0 mr-1 bg-white py-4"
-                      style={{
-                        borderBottom: "3px solid #086AD8",
-                        maxHeight: "80vh",
-                        overflowY: "scroll",
-                      }}
+                <ul
+                  className={
+                    B
+                      ? "B active ml-auto navbar-nav pl-lg-5 mb-2 mb-lg-0"
+                      : "B navbar-nav ml-auto pl-lg-5 mb-2 mb-lg-0"
+                  }
+                >
+                  <li className="active nav-item pl-3">
+                    <NavLink
+                      to="/"
+                      exact
+                      className="nav-link d-flex align-items-center"
                     >
-                      <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
-                        <div className="text-dark">
-                          <b className="pl-3">Digital Marketing</b>
-
-                          {dropdown.map((data) => {
-                            console.log(data);
-                            return (
-                              <div className="py-1 dropdownHover pl-3">
-                                <div className="fa fa-angle-right pr-2"></div>
-                                {data}
-                              </div>
-                            );
-                          })}
-                        </div>
-                      </div>
-                      <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
-                        <div className="text-dark">
-                          <b className="pl-3">Web & Apps Development</b>
-
-                          {dropdown.map((data) => {
-                            console.log(data);
-                            return (
-                              <div className="py-1 dropdownHover pl-3">
-                                <div className="fa fa-angle-right pr-2"></div>
-                                {data}
-                              </div>
-                            );
-                          })}
-                        </div>
-                      </div>
-                      <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
-                        <div className="text-dark">
-                          <b className="pl-3">Paid Marketing</b>
-
-                          {dropdown.map((data) => {
-                            console.log(data);
-                            return (
-                              <div className="py-1 dropdownHover pl-3">
-                                <div className="fa fa-angle-right pr-2"></div>
-                                {data}
-                              </div>
-                            );
-                          })}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li className="nav-item pl-3">
-                  <NavLink
-                    to="/market"
-                    className="nav-link d-flex align-items-center"
-                  >
-                    Market<span className="fa fa-angle-down pl-1"></span>
-                  </NavLink>
-                  <div className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4 w-100">
-                    <div
-                      className="row mr-lg-0 mr-1 bg-white py-4"
-                      style={{
-                        borderBottom: "3px solid #086AD8",
-                        maxHeight: "80vh",
-                        overflowY: "scroll",
-                      }}
-                    >
-                      <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
-                        <div className="text-dark">
-                          <b className="pl-3">Digital Marketing</b>
-
-                          {dropdown.map((data) => {
-                            console.log(data);
-                            return (
-                              <div className="py-1 dropdownHover pl-3">
-                                <div className="fa fa-angle-right pr-2"></div>
-                                {data}
-                              </div>
-                            );
-                          })}
-                        </div>
-                      </div>
-                      <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
-                        <div className="text-dark">
-                          <b className="pl-3">Web & Apps Development</b>
-
-                          {dropdown.map((data) => {
-                            console.log(data);
-                            return (
-                              <div className="py-1 dropdownHover pl-3">
-                                <div className="fa fa-angle-right pr-2"></div>
-                                {data}
-                              </div>
-                            );
-                          })}
-                        </div>
-                      </div>
-                      <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
-                        <div className="text-dark">
-                          <b className="pl-3">Paid Marketing</b>
-
-                          {dropdown.map((data) => {
-                            console.log(data);
-                            return (
-                              <div className="py-1 dropdownHover pl-3">
-                                <div className="fa fa-angle-right pr-2"></div>
-                                {data}
-                              </div>
-                            );
-                          })}
-                        </div>
-                      </div>
-                      <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
-                        <div className="text-dark">
-                          <b className="pl-3">Others</b>
-
-                          {dropdown.map((data) => {
-                            console.log(data);
-                            return (
-                              <div className="py-1 dropdownHover pl-3">
-                                <div className="fa fa-angle-right pr-2"></div>
-                                {data}
-                              </div>
-                            );
-                          })}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li className="nav-item pl-3 position-relative">
-                  <NavLink
-                    to="/pricing"
-                    className="nav-link d-flex align-items-center"
-                  >
-                    Pricing<span className="fa fa-angle-down pl-1"></span>
-                  </NavLink>
-                  <div
-                    className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4"
-                    style={{ width: "fit-content" }}
-                  >
-                    <div className=" justify-content-center d-flex">
+                      Services<span className="fa fa-angle-down pl-1"></span>
+                    </NavLink>
+                    <div className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4 w-100">
                       <div
-                        className="mr-lg-0 mr-1 bg-white"
-                        style={{ borderBottom: "3px solid #086AD8" }}
+                        className="row mr-lg-0 mr-1 bg-white py-4"
+                        style={{
+                          borderBottom: "3px solid #086AD8",
+                          maxHeight: "80vh",
+                          overflowY: "scroll",
+                        }}
                       >
-                        <div className="dropdownHover py-2 px-3">
-                          SEO Packages
+                        <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
+                          <div className="text-dark">
+                            <b className="pl-3">Digital Marketing</b>
+
+                            {dropdown.map((data) => {
+                              console.log(data);
+                              return (
+                                <div className="py-1 dropdownHover pl-3">
+                                  <div className="fa fa-angle-right pr-2"></div>
+                                  {data}
+                                </div>
+                              );
+                            })}
+                          </div>
                         </div>
-                        <div className="dropdownHover py-2 px-3">
-                          SMO Packages
+                        <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
+                          <div className="text-dark">
+                            <b className="pl-3">Web & Apps Development</b>
+
+                            {dropdown.map((data) => {
+                              console.log(data);
+                              return (
+                                <div className="py-1 dropdownHover pl-3">
+                                  <div className="fa fa-angle-right pr-2"></div>
+                                  {data}
+                                </div>
+                              );
+                            })}
+                          </div>
                         </div>
-                        <div className="dropdownHover py-2 px-3">
-                          PPC Packages
-                        </div>
-                        <div className="dropdownHover py-2 px-3">
-                          WEB Packages
+                        <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
+                          <div className="text-dark">
+                            <b className="pl-3">Paid Marketing</b>
+
+                            {dropdown.map((data) => {
+                              console.log(data);
+                              return (
+                                <div className="py-1 dropdownHover pl-3">
+                                  <div className="fa fa-angle-right pr-2"></div>
+                                  {data}
+                                </div>
+                              );
+                            })}
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </li>
-                <li className="nav-item pl-3">
-                  <NavLink to="/protfolio" className="nav-link">
-                    Portfolio
-                  </NavLink>
-                </li>
-                <li className="nav-item pl-3">
-                  <NavLink to="/about" className="nav-link">
-                    About Us
-                  </NavLink>
-                </li>
-                <li className="nav-item pl-3">
-                  <NavLink to="/testimonial" className="nav-link">
-                    Testimonial
-                  </NavLink>
-                </li>
-                <li className="nav-item pl-3">
-                  <NavLink to="/blog" className="nav-link">
-                    Blog
-                  </NavLink>
-                </li>
-                <li className="nav-item pl-3">
-                  <a
-                    data-target="#mymodal"
-                    data-toggle="modal"
-                    className="nav-link"
-                  >
-                    Contact Us
-                  </a>
-                </li>
-                <li className="nav-item pl-lg-3 mx-lg-0 mx-5 mb-lg-0 mb-3">
-                  <div className="btn btn-primary" style={{ width: "100%" }}>
-                    Free Consultation
-                  </div>
-                </li>
-              </ul>
+                  </li>
+                  <li className="nav-item pl-3">
+                    <NavLink
+                      to="/market"
+                      className="nav-link d-flex align-items-center"
+                    >
+                      Market<span className="fa fa-angle-down pl-1"></span>
+                    </NavLink>
+                    <div className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4 w-100">
+                      <div
+                        className="row mr-lg-0 mr-1 bg-white py-4"
+                        style={{
+                          borderBottom: "3px solid #086AD8",
+                          maxHeight: "80vh",
+                          overflowY: "scroll",
+                        }}
+                      >
+                        <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
+                          <div className="text-dark">
+                            <b className="pl-3">Digital Marketing</b>
+
+                            {dropdown.map((data) => {
+                              console.log(data);
+                              return (
+                                <div className="py-1 dropdownHover pl-3">
+                                  <div className="fa fa-angle-right pr-2"></div>
+                                  {data}
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
+                          <div className="text-dark">
+                            <b className="pl-3">Web & Apps Development</b>
+
+                            {dropdown.map((data) => {
+                              console.log(data);
+                              return (
+                                <div className="py-1 dropdownHover pl-3">
+                                  <div className="fa fa-angle-right pr-2"></div>
+                                  {data}
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
+                          <div className="text-dark">
+                            <b className="pl-3">Paid Marketing</b>
+
+                            {dropdown.map((data) => {
+                              console.log(data);
+                              return (
+                                <div className="py-1 dropdownHover pl-3">
+                                  <div className="fa fa-angle-right pr-2"></div>
+                                  {data}
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
+                          <div className="text-dark">
+                            <b className="pl-3">Others</b>
+
+                            {dropdown.map((data) => {
+                              console.log(data);
+                              return (
+                                <div className="py-1 dropdownHover pl-3">
+                                  <div className="fa fa-angle-right pr-2"></div>
+                                  {data}
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="nav-item pl-3 position-relative">
+                    <NavLink
+                      to="/pricing"
+                      className="nav-link d-flex align-items-center"
+                    >
+                      Pricing<span className="fa fa-angle-down pl-1"></span>
+                    </NavLink>
+                    <div
+                      className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4"
+                      style={{ width: "fit-content" }}
+                    >
+                      <div className=" justify-content-center d-flex">
+                        <div
+                          className="mr-lg-0 mr-1 bg-white"
+                          style={{ borderBottom: "3px solid #086AD8" }}
+                        >
+                          <div className="dropdownHover py-2 px-3">
+                            SEO Packages
+                          </div>
+                          <div className="dropdownHover py-2 px-3">
+                            SMO Packages
+                          </div>
+                          <div className="dropdownHover py-2 px-3">
+                            PPC Packages
+                          </div>
+                          <div className="dropdownHover py-2 px-3">
+                            WEB Packages
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="nav-item pl-3">
+                    <NavLink to="/protfolio" className="nav-link">
+                      Portfolio
+                    </NavLink>
+                  </li>
+                  <li className="nav-item pl-3">
+                    <NavLink to="/about" className="nav-link">
+                      About Us
+                    </NavLink>
+                  </li>
+                  <li className="nav-item pl-3">
+                    <NavLink to="/testimonial" className="nav-link">
+                      Testimonial
+                    </NavLink>
+                  </li>
+                  <li className="nav-item pl-3">
+                    <NavLink to="/blog" className="nav-link">
+                      Blog
+                    </NavLink>
+                  </li>
+                  <li className="nav-item pl-3">
+                    <a
+                      data-target="#mymodal"
+                      data-toggle="modal"
+                      className="nav-link"
+                    >
+                      Contact Us
+                    </a>
+                  </li>
+                  <li className="nav-item pl-lg-3 mx-lg-0 mx-5 mb-lg-0 mb-3">
+                    <div className="btn btn-primary" style={{ width: "100%" }}>
+                      Free Consultation
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </nav>
