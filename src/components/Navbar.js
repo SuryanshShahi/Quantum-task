@@ -38,12 +38,12 @@ function Navbar() {
         >
           <div className="container-fluid mx-5">
             <NavLink
-              className="navbar-brand"
+              className="navbar-brand mt-lg-1"
               to="https://quantumitinnovation.com/"
             >
               <img
                 src={logo}
-                className="img-fluid my-3 py-1"
+                className="img-fluid my-lg-3 py-1"
                 style={{ width: "160px", height: "70px" }}
               />
             </NavLink>

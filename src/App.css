@@ -43,7 +43,9 @@ body {
     transform: translateY(0);
   }
 }
-
+.navbar-brand{
+  padding: 0;
+}
 .active.navbar a {
   color: black;
 }
