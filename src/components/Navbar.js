@@ -8,16 +8,19 @@ function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const [B, setHeader] = useState(false);
   const [back, setBack] = useState(false);
+  const [isActive, setActive] = useState(false);
 
   const changeBackground = () => {
     if (window.scrollY >= 150) {
       setNavbar(true);
       setHeader(true);
       setBack(true);
+      setActive(true);
     } else {
       setNavbar(false);
       setHeader(false);
       setBack(false);
+      setActive(false);
     }
   };
   window.addEventListener("scroll", changeBackground);
@@ -41,11 +44,19 @@ function Navbar() {
               className="navbar-brand mt-lg-1"
               to="https://quantumitinnovation.com/"
             >
-              <img
-                src={logo}
-                className="img-fluid my-lg-3 py-1"
-                style={{ width: "160px", height: "70px" }}
-              />
+              {!isActive ? (
+                <img
+                  src={logoWhite}
+                  className="img-fluid my-lg-3 py-1"
+                  style={{ width: "160px", height: "70px" }}
+                />
+              ) : (
+                <img
+                  src={logo}
+                  className="img-fluid my-lg-3 py-1"
+                  style={{ width: "160px", height: "70px" }}
+                />
+              )}
             </NavLink>
             <button
               className="navbar-toggler"
@@ -74,7 +85,11 @@ function Navbar() {
                 }
               >
                 <li className="active nav-item pl-3">
-                  <NavLink to="/" exact className="nav-link d-flex align-items-center">
+                  <NavLink
+                    to="/"
+                    exact
+                    className="nav-link d-flex align-items-center"
+                  >
                     Services<span className="fa fa-angle-down pl-1"></span>
                   </NavLink>
                   <div className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4 w-100">
@@ -135,8 +150,11 @@ function Navbar() {
                   </div>
                 </li>
                 <li className="nav-item pl-3">
-                  <NavLink to="/market" className="nav-link d-flex align-items-center">
-                  Market<span className="fa fa-angle-down pl-1"></span>
+                  <NavLink
+                    to="/market"
+                    className="nav-link d-flex align-items-center"
+                  >
+                    Market<span className="fa fa-angle-down pl-1"></span>
                   </NavLink>
                   <div className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4 w-100">
                     <div
@@ -211,8 +229,11 @@ function Navbar() {
                   </div>
                 </li>
                 <li className="nav-item pl-3 position-relative">
-                  <NavLink to="/pricing" className="nav-link d-flex align-items-center">
-                  Pricing<span className="fa fa-angle-down pl-1"></span>
+                  <NavLink
+                    to="/pricing"
+                    className="nav-link d-flex align-items-center"
+                  >
+                    Pricing<span className="fa fa-angle-down pl-1"></span>
                   </NavLink>
                   <div
                     className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4"
@@ -221,7 +242,7 @@ function Navbar() {
                     <div className=" justify-content-center d-flex">
                       <div
                         className="mr-lg-0 mr-1 bg-white"
-                        style={{ borderBottom: "3px solid #086AD8", }}
+                        style={{ borderBottom: "3px solid #086AD8" }}
                       >
                         <div className="dropdownHover py-2 px-3">
                           SEO Packages
@@ -260,12 +281,16 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li className="nav-item pl-3">
-                  <NavLink to="/contact" className="nav-link">
+                  <a
+                    data-target="#mymodal"
+                    data-toggle="modal"
+                    className="nav-link"
+                  >
                     Contact Us
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="nav-item pl-lg-3 mx-lg-0 mx-5 mb-lg-0 mb-3">
-                  <div className="nav-link btn btn-primary">
+                  <div className="btn btn-primary">
                     Free Consultation
                   </div>
                 </li>
@@ -346,6 +371,174 @@ function Navbar() {
         >
           {" "}
         </a>
+      </div>
+
+      <div className="modal fade " id="mymodal">
+        <div className="modal-dialog modal-xl">
+          <div className="modal-content modalcompare">
+            <div className="container">
+              <div className="mt-2 text-center">
+                <h1 className=" pt-3" style={{ fontWeight: "700" }}>
+                  Get
+                  <span
+                    className="font-weight-bolder pl-2"
+                    style={{ color: "#086AD8" }}
+                  >
+                    In Touch
+                  </span>
+                </h1>
+                <div>
+                  Tell us what's on your mind and we'll get right back to you !
+                </div>
+              </div>
+              <div className="card border-0 my-4 pt-3">
+                <iframe
+                  className="map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9877019028863!2d77.377948115009!3d28.63013068241875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceffd525cc01b%3A0x2855561fbab51402!2sQuantum%20IT%20Innovation!5e0!3m2!1sen!2sbg!4v1658829798658!5m2!1sen!2sbg"
+                  allowfullscreen=""
+                  loading="lazy"
+                  style={{ height: "400px" }}
+                ></iframe>
+
+                <div className="container justify-content-center d-flex">
+                  <div className="row">
+                    <div className="col-lg-4 col-12 pt-5">
+                      <div className="d-flex">
+                        <div className="fa fa-map-marker px-3 fa-2x contact text-center mr-3"></div>
+                        <div className="">
+                          <label className="font-weight-bolder">
+                            LOCATION:
+                          </label>
+                          <p className="">
+                            India: H-11, 1st Floor, Sector 63, Noida - 201301
+                          </p>
+                        </div>
+                      </div>
+                      <br></br>
+                    
+                      <div className="d-flex">
+                        <div className="fa fa-envelope px-3 fa-lg contact text-center mr-3"></div>
+                        <div>
+                          <label className="font-weight-bolder">
+                            SAY HELLO:
+                          </label>
+                          <p className="">sales@quantumitinnovation.com</p>
+                        </div>
+                      </div>
+                      <br></br>
+                      <br></br>
+                     
+                      <div className="d-flex">
+                        <div className="fa fa-mobile-phone fa-2x contact text-center mr-3"></div>
+                        <div>
+                          <label className="font-weight-bolder">
+                            CALL FOR ADVICE NOW!
+                          </label>
+                          <div>
+                            {" "}
+                            <a
+                              href="tel:+91 971 799 8517"
+                              className="text-decoration-none"
+                            >
+                              <b>+91 971 799 8517</b>
+                            </a>
+                          </div>
+                          <div>
+                            <a
+                              href="tel:+1 877 877 3644"
+                              className="text-decoration-none"
+                            >
+                              <b>+1 877 877 3644</b>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="col-lg-8 col-12">
+                      <div className="mx-auto py-5 w-auto px-5">
+                        <form>
+                          <div className="row">
+                            <div className="col-lg-6 col-md-6">
+                              <div class="mb-3">
+                                <label
+                                  for="input"
+                                  class="form-label font-weight-bold"
+                                >
+                                  Full Name:
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="input"
+                                  placeholder="Enter Full Name"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div className="col-lg-6 col-md-6">
+                              <div class="mb-3">
+                                <label
+                                  for="input1"
+                                  class="form-label font-weight-bold"
+                                >
+                                  Phone:
+                                </label>
+                                <input
+                                  type="tel"
+                                  class="form-control"
+                                  id="input1"
+                                  placeholder="Enter Phone No."
+                                  required
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label
+                              for="input2"
+                              class="form-label font-weight-bold"
+                            >
+                              Email:
+                            </label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="input2"
+                              placeholder="Enter Email"
+                              required
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label
+                              for="textarea1"
+                              class="form-label font-weight-bold"
+                            >
+                              Message:
+                            </label>
+                            <textarea
+                              class="form-control"
+                              id="textarea1"
+                              rows="3"
+                            ></textarea>
+                          </div>
+                          <button
+                            type="submit"
+                            className="btn btn-primary rounded-pill shadow-lg px-4 py-2 text-white"
+                            to="/"
+                          >
+                            Send Message
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br></br>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

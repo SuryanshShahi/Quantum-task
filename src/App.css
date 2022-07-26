@@ -29,6 +29,25 @@ body {
 
 /* -----------------navbar------------------ */
 
+.form-control:focus {
+  border-color: #086AD8;
+  box-shadow: none;
+  outline: none;
+}
+.contact {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #c3dcf888;
+  line-height: 48px;
+  color: #086AD8;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.contact:hover {
+  background-color: #086AD8;
+  color: white;
+}
 .navbar {
   height: 80px;
   transition: 0.3s;
@@ -48,6 +67,7 @@ body {
 }
 .active.navbar a {
   color: black;
+  font-weight: 500;
 }
 .nav-link {
   color: white;
@@ -133,21 +153,6 @@ body {
   background-color: #086AD8 !important;
 }
 
-@media (max-width: 990px) {
-  .hrtag {
-    display: none;
-  }
-  .active.navbar a {
-    color: white;
-  }
-}
-
-@media (min-width: 990px) {
-  .B.active {
-    background: none;
-  }
-}
-
 /* --------------------Home------------------- */
 table {
   width: 100%;
@@ -168,4 +173,22 @@ tr:nth-child(even) {
 }
 .startbtn .rounded-pill:hover {
   background-color: #0869d896;
+}
+
+
+
+/* --------------------------------------------- */
+@media (max-width: 990px) {
+  .hrtag {
+    display: none;
+  }
+  .active.navbar a {
+    color: white;
+  }
+}
+
+@media (min-width: 990px) {
+  .B.active {
+    background: none;
+  }
 }
