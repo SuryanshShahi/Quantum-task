@@ -1,0 +1,143 @@
+export const dropdown = [
+  "Digital Marketing",
+  "Search Engine Optimization",
+  "App Store Optimization",
+  "Online Reputation Management",
+  "Small SEO Business",
+  "E-commerce SEO",
+  "D & R Oriented Local SEO",
+  "White Label SEO",
+  "YouTube Optimization",
+  "Web & Apps Development",
+  "Paid Marketing",
+  "Cannabis Industry",
+];
+
+export const SEOAnalysis = [
+  { data: "Pre-Optimization Website Analysis", sign: "✓" },
+  { data: "Competitor Analysis", sign: "✓" },
+  { data: "Keyword Research & Analysis", sign: "✓" },
+  { data: "Baseline Ranking Check", sign: "✓" },
+  { data: "Duplicate Content Check", sign: "✓" },
+  { data: "Google Penalty Check", sign: "✓" },
+  { data: "Backlink Analysis (if required)", sign: "✘" },
+];
+
+export const OnPage = [
+  { data: "Website Canonical Check", sign: "✓" },
+  { data: "Title Tag Optimization", sign: "✓" },
+  { data: "META Tags Optimization", sign: "✓" },
+  { data: "Heading Tags Optimization", sign: "✓" },
+  { data: "Image Alt Tags Optimization", sign: "✓" },
+  { data: "Content Optimization", sign: "✓" },
+  { data: "SEO Friendly URL Setup", sign: "✘" },
+  { data: "Site Navigation Analysis", sign: "✓" },
+  { data: "404 Page Implementation", sign: "✓" },
+  { data: "Broken Links Check", sign: "✓" },
+  { data: "Website Speed Check", sign: "✓" },
+  { data: "Google Indexed Pages Check", sign: "✓" },
+  { data: "Robots.txt Creation", sign: "✓" },
+  { data: "Google XML Sitemap", sign: "✓" },
+  { data: "HTML Sitemap Setup", sign: "✓" },
+  { data: "Hyperlink Optimization", sign: "✓" },
+  { data: "Website Responsive Check", sign: "✓" },
+  { data: "Website Permalinks Analysis", sign: "✘" },
+  { data: "Internal Linking Optimization", sign: "✘" },
+  { data: "Google Webmaster Tools Setup", sign: "✓" },
+  { data: "Bing Webmaster Tools Setup", sign: "✘" },
+  { data: "Google Analytics Setup", sign: "✓" },
+  { data: "Structured Data Setup", sign: "✘" },
+  { data: "On Site Blog Section Creation", sign: "✓" },
+];
+
+export const OffPage = [
+  { data: "Search Engine Submission", sign: "✓" },
+  { data: "Blog Writing", sign: "2" },
+  { data: "Blog Links", sign: "2" },
+  { data: "Blog Social Bookmarking Links", sign: "6" },
+  { data: "Article Writing", sign: "1" },
+  { data: "Article Submissions", sign: "1" },
+  { data: "Article Marketing", sign: "5" },
+  { data: "Image sharing", sign: "2" },
+  { data: "Contextual Links", sign: "✓" },
+  { data: "Keyword used in anchor text", sign: "✓" },
+  { data: "Share Each Blog Post Across Social Media Networks", sign: "✓" },
+  { data: "Web 2.0 Profile Creation", sign: "✘" },
+  { data: "Web 2.0 Profiles Bookmarking Links", sign: "✘" },
+  { data: "Press Release (If Client Provides News)", sign: "✘" },
+  { data: "Press Release Bookmarking Links", sign: "✘" },
+  { data: "Social Bookmarking Links", sign: "15" },
+  { data: "Micro Blogging", sign: "4" },
+  { data: "Classified Submissions", sign: "5" },
+  { data: "Infographics Creation/Month", sign: "✘" },
+  { data: "Infographics Post/Month", sign: "✘" },
+  { data: "Share each Infographics on Social Media Networks", sign: "✘" },
+  { data: "Google Business Page Creation", sign: "✘" },
+  { data: "Bing Local Listing Creation", sign: "✓" },
+  { data: "PPT Submissions", sign: "✘" },
+  { data: "Video Marketing (if Client provides)", sign: "✓" },
+  { data: "Location optimization", sign: "1" },
+  { data: "Local Business Listings", sign: "1" },
+  { data: "NAP Syndication", sign: "✓" },
+];
+
+export const testimonials = [
+  {
+    name: "Mike Sullivan",
+    fLetter: "M",
+    duration: "6 months",
+    rating: "5",
+    description:
+      "They have been very detailed and also responsive to all my questions.  They are way to work with.   It has only been 3 months but hopefully my ranking will continue to improve.",
+  },
+  {
+    name: "Carlene Cast",
+    fLetter: "C",
+    duration: "7 months",
+    rating: "5",
+    description:
+      "These guys are fantastic! Taran takes the time to assess what is required to resolve any issues with my website. I can always count on this team to help us achieve any short-term or long-term goals we have for our website. They've been a huge help to our company so far, and I'll continue to use his services as needed. I'm so glad I found Digital Guider for my business!",
+  },
+  {
+    name: "Bob Cool",
+    fLetter: "B",
+    duration: "7 months",
+    rating: "3",
+    description:
+      "They were helpful, but I felt very cornered and was not really listened to.There PDF website survey was way more helpful than the meeting call I was in.",
+  },
+  {
+    name: "VENUS TRUONG",
+    fLetter: "V",
+    duration: "9 months",
+    rating: "5",
+    description:
+      "Vic is EXCELLENT, EXCELLENT! Professional and top notch service for my business . I just really want to tell you how lucky I am to work with you.Thanks million....'Ps; Will prefer friends to you.Venus T",
+  },
+  {
+    name: "Jared Wright",
+    fLetter: "J",
+    duration: "9 months",
+    rating: "5",
+    description:
+      "I have had a great experience with Digital Guider. I am the Owner and operator of Zion Amazing Adventures a guiding company in the Zion area. I have a lot on my plate and have little to no time for marketing. Anna Wilson makes sure that I make it a priority because of the impact it will have on our success. She has me approve the work so I can focus on our clients. We have already seen progress in our first month. Stoked.",
+  },
+];
+
+export const ServiceAreas = [
+  "Alaska SEO",
+  "North Carolina SEO",
+  "Colorado SEO",
+  "Oregon SEO",
+  "Florida SEO",
+  "California SEO",
+  "Ohio SEO",
+  "Illinois SEO",
+  "Massachusetts SEO",
+  "South Carolina SEO",
+  "Pennysylvania SEO",
+  "Texas SEO",
+  "Oklahoma SEO",
+  "Arizono SEO",
+  "Alabama SEO",
+];
