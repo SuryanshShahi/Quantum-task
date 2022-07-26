@@ -18,6 +18,7 @@ const App = () => {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Redirect to="/" />
         </Switch>
         <Footer />
       </div>

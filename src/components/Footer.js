@@ -1,10 +1,9 @@
 import React from "react";
-import { FooterBanner, ServiceAreas } from "./Data/Content";
-import Googlepartner from "./Images/PartnerBadgeClickable.svg";
-import footerImg from "./Images/footerimg.png";
+import { FooterBanner } from "./Data/Content";
+// import Googlepartner from "./Images/PartnerBadgeClickable.svg";
+// import footerImg from "./Images/footerimg.png";
 import India from "./Images/indian.png";
 import Usa from "./Images/usa.png";
-import Footerbg from "./Images/footerbg.jpg";
 import { Carousel } from "react-bootstrap";
 
 function Footer() {
@@ -135,6 +134,7 @@ function Footer() {
             <ul className="list-unstyled pt-3">
               <li className="pb-3">
                 <img
+                  alt="data"
                   src={India}
                   className="img-fluid"
                   style={{ width: "25px", height: "17px" }}
@@ -148,6 +148,7 @@ function Footer() {
               </li>
               <li>
                 <img
+                  alt="data"
                   src={Usa}
                   className="img-fluid"
                   style={{ width: "25px", height: "17px" }}
@@ -167,7 +168,7 @@ function Footer() {
                   {FooterBanner.map((e) => {
                     return (
                       <Carousel.Item interval="3000" key={e.id}>
-                        <img src={e} className="img-fluid" alt="image"></img>
+                        <img src={e} className="img-fluid" alt="data"></img>
                       </Carousel.Item>
                     );
                   })}

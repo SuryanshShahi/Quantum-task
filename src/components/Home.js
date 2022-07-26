@@ -3,9 +3,6 @@ import {
   SEOAnalysis,
   OnPage,
   OffPage,
-  OffPage2,
-  OffPage3,
-  OffPage4,
   testimonials,
   Facebook,
   Instagram,
@@ -974,7 +971,7 @@ function Home() {
                 })}
               </table>
             </div>
-             <div className="pb-3">
+            <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
@@ -1003,7 +1000,7 @@ function Home() {
               </table>
             </div>
 
-             <div className="pb-3">
+            <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
@@ -1032,7 +1029,7 @@ function Home() {
               </table>
             </div>
 
-             <div className="pb-3">
+            <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
@@ -1061,7 +1058,7 @@ function Home() {
               </table>
             </div>
 
-             <div className="pb-3">
+            <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
@@ -1126,7 +1123,7 @@ function Home() {
               </table>
             </div>
 
-             <div className="pb-3">
+            <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
@@ -1155,7 +1152,7 @@ function Home() {
               </table>
             </div>
 
-             <div className="pb-3">
+            <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
@@ -1184,7 +1181,7 @@ function Home() {
               </table>
             </div>
 
-             <div className="pb-3">
+            <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
@@ -1213,7 +1210,7 @@ function Home() {
               </table>
             </div>
 
-             <div className="pb-3">
+            <div className="pb-3">
               {" "}
               <div
                 className="my-4 text-center"
@@ -1537,6 +1534,7 @@ function Home() {
                 <div className="mt-2">
                   Based on 97 reviews<br></br>
                   <img
+                    alt="data"
                     src={Google}
                     className="img-fluid"
                     width="144"

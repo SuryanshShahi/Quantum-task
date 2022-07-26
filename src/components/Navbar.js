@@ -45,17 +45,18 @@ function Navbar() {
                 {" "}
                 <a
                   className="navbar-brand mt-lg-1"
-                  target="_blank"
                   href="https://quantumitinnovation.com/"
                 >
                   {!isActive ? (
                     <img
+                      alt="data"
                       src={logoWhite}
                       className="img-fluid my-lg-3 py-1"
                       style={{ width: "160px", height: "70px" }}
                     />
                   ) : (
                     <img
+                      alt="data"
                       src={logo}
                       className="img-fluid my-lg-3 py-1"
                       style={{ width: "160px", height: "70px" }}
@@ -289,6 +290,7 @@ function Navbar() {
                   </li>
                   <li className="nav-item pl-3">
                     <a
+                      href="#"
                       data-target="#mymodal"
                       data-toggle="modal"
                       className="nav-link"
@@ -405,6 +407,7 @@ function Navbar() {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9877019028863!2d77.377948115009!3d28.63013068241875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceffd525cc01b%3A0x2855561fbab51402!2sQuantum%20IT%20Innovation!5e0!3m2!1sen!2sbg!4v1658829798658!5m2!1sen!2sbg"
                   allowfullscreen=""
                   loading="lazy"
+                  title="map"
                   style={{ height: "400px" }}
                 ></iframe>
 
