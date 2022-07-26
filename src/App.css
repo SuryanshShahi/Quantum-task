@@ -31,9 +31,9 @@ body {
 
 .navbar {
   height: 80px;
-  /* transition: 0.3s; */
-  animation: 1.8s ease-out 0s 1 fadeInDown;
-  transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 0.3s;
+  /* animation: 1.8s ease-out 0s 1 fadeInDown;
+  transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1); */
 }
 @keyframes fadeInDown {
   0% {
@@ -56,10 +56,12 @@ body {
 }
 .navbar-nav .active {
   color: #086AD8 !important;
+  font-weight: 500;
 }
 .nav-link:hover {
   color: #086AD8 !important;
   z-index: 1 !important;
+  font-weight: 500;
 }
 .B.active {
   background: rgba(0, 0, 0, 0.6);
