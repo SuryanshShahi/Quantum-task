@@ -99,73 +99,36 @@ function Navbar() {
                       : "B navbar-nav ml-auto pl-lg-5 mb-2 mb-lg-0"
                   }
                 >
-                  <li className="active nav-item pl-3">
+                  <li className="nav-item pl-3">
+                    <NavLink to="/" exact className="active nav-link">
+                      HOME
+                    </NavLink>
+                  </li>
+                  <li className="nav-item pl-3 position-relative">
                     <NavLink
-                      to="/"
-                      exact
+                      to="/company"
                       className="nav-link d-flex align-items-center"
                     >
-                      Services<span className="fa fa-angle-down pl-1"></span>
+                      COMPANY<span className="fa fa-angle-down pl-1"></span>
                     </NavLink>
-                    <div className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4 w-100">
-                      <div
-                        className="row mr-lg-0 mr-1 py-4"
-                        style={{
-                          background:"#ffffff",boxShadow:"0 2px 29px rgb(0 0 0 / 5%)",
-                          borderBottom: "3px solid #086AD8",
-                          maxHeight: "80vh",
-                          overflowY: "scroll",
-                        }}
-                      >
-                        <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
-                          <div className="text-dark">
-                            <b className="pl-3">Digital Marketing</b>
-
-                            {dropdown.map((e) => {
-                              return ( 
-                                <div 
-                                  className="py-1 dropdownHover pl-3"
-                                  key={e.id}
-                                >
-                                  <div className="fa fa-angle-right pr-2"></div>
-                                  {e.name}
-                                </div>
-                              );
-                            })}
+                    <div
+                      className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4"
+                      style={{ width: "fit-content" }}
+                    >
+                      <div className=" justify-content-center d-flex">
+                        <div
+                          className=""
+                          style={{
+                            borderBottom: "3px solid #086AD8",
+                            background: "#fffffff2",
+                            boxShadow: "0 2px 29px rgb(0 0 0 / 5%)",width:"max-content"
+                          }}
+                        >
+                          <div className="dropdownHover py-2 px-4">
+                     Why Quantum It Innovation?
                           </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
-                          <div className="text-dark">
-                            <b className="pl-3">Web & Apps Development</b>
-
-                            {dropdown.map((e) => {
-                              return ( 
-                                <div 
-                                  className="py-1 dropdownHover pl-3"
-                                  key={e.id}
-                                >
-                                  <div className="fa fa-angle-right pr-2"></div>
-                                  {e.name}
-                                </div>
-                              );
-                            })}
-                          </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
-                          <div className="text-dark">
-                            <b className="pl-3">Paid Marketing</b>
-
-                            {dropdown.map((e) => {
-                              return ( 
-                                <div 
-                                  className="py-1 dropdownHover pl-3"
-                                  key={e.id}
-                                >
-                                  <div className="fa fa-angle-right pr-2"></div>
-                                  {e.name}
-                                </div>
-                              );
-                            })}
+                          <div className="dropdownHover py-2 px-4">
+                     Partnership
                           </div>
                         </div>
                       </div>
@@ -173,87 +136,101 @@ function Navbar() {
                   </li>
                   <li className="nav-item pl-3">
                     <NavLink
-                      to="/market"
+                      to="/service"
                       className="nav-link d-flex align-items-center"
                     >
-                      Market<span className="fa fa-angle-down pl-1"></span>
+                      SERVICE<span className="fa fa-angle-down pl-1"></span>
                     </NavLink>
-                    <div className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4 w-100">
-                      <div
-                        className="row mr-lg-0 mr-1 py-4"
-                        style={{
-                          background:"#ffffff",boxShadow:"0 2px 29px rgb(0 0 0 / 5%)",
-                          borderBottom: "3px solid #086AD8",
-                          maxHeight: "80vh",
-                          overflowY: "scroll",
-                        }}
-                      >
-                        <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
-                          <div className="text-dark">
-                            <b className="pl-3">Digital Marketing</b>
 
-                            {dropdown.map((e) => {
-                              return (
-                                <div
-                                  className="py-1 dropdownHover pl-3"
-                                  key={e.id}
-                                >
-                                  <div className="fa fa-angle-right pr-2"></div>
-                                  {e.name}
+                    <div
+                      className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4"
+                      style={{ width: "100%" }}
+                    >
+                      <div className="justify-content-center d-flex">
+                        <div className="">
+                          <div
+                            className="row mr-lg-0 mr-1 py-4"
+                            style={{
+                              background: "#fffffff2",
+                              width: "fit-content",
+                              boxShadow: "0 2px 29px rgb(0 0 0 / 5%)",
+                              borderBottom: "3px solid #086AD8",
+                              maxHeight: "80vh",
+                              overflowY: "scroll",
+                            }}
+                          >
+                            <div className="col-lg-3 col-md-6 col-12 pt-2">
+                              <div className="text-dark">
+                                <div className="pl-3 pb-3">
+                                  <b>APP DEVELOPMENT</b>
                                 </div>
-                              );
-                            })}
-                          </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
-                          <div className="text-dark">
-                            <b className="pl-3">Web & Apps Development</b>
 
-                            {dropdown.map((e) => {
-                              return (
-                                <div
-                                  className="py-1 dropdownHover pl-3"
-                                  key={e.id}
-                                >
-                                  <div className="fa fa-angle-right pr-2"></div>
-                                  {e.name}
+                                {dropdown.map((e) => {
+                                  return (
+                                    <div
+                                      className="py-1 dropdownHover px-3"
+                                      key={e.id}
+                                    >
+                                      {e.app}
+                                    </div>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                            <div className="col-lg-3 col-md-6 col-12 pt-2">
+                              <div className="text-dark">
+                                <div className="pl-3 pb-3">
+                                  <b>WEB DEVELOPMENT</b>
                                 </div>
-                              );
-                            })}
-                          </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
-                          <div className="text-dark">
-                            <b className="pl-3">Paid Marketing</b>
 
-                            {dropdown.map((e) => {
-                              return (
-                                <div
-                                  className="py-1 dropdownHover pl-3"
-                                  key={e.id}
-                                >
-                                  <div className="fa fa-angle-right pr-2"></div>
-                                  {e.name}
+                                {dropdown.map((e) => {
+                                  return (
+                                    <div
+                                      className="py-1 dropdownHover px-3"
+                                      key={e.id}
+                                    >
+                                      {e.web}
+                                    </div>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                            <div className="col-lg-3 col-md-6 col-12 pt-2">
+                              <div className="text-dark">
+                                <div className="pl-3 pb-3">
+                                  <b>DIGITAL MARKETING</b>
                                 </div>
-                              );
-                            })}
-                          </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-12 px-4 pt-2">
-                          <div className="text-dark">
-                            <b className="pl-3">Others</b>
 
-                            {dropdown.map((e) => {
-                              return (
-                                <div
-                                  className="py-1 dropdownHover pl-3"
-                                  key={e.id}
-                                >
-                                  <div className="fa fa-angle-right pr-2"></div>
-                                  {e.name}
+                                {dropdown.map((e) => {
+                                  return (
+                                    <div
+                                      className="py-1 dropdownHover px-3"
+                                      key={e.id}
+                                    >
+                                      {e.marketing}
+                                    </div>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                            <div className="col-lg-3 col-md-6 col-12 pt-2">
+                              <div className="text-dark">
+                                <div className="pl-3 pb-3">
+                                  <b>EMERGING TECHNOLOGY</b>
                                 </div>
-                              );
-                            })}
+
+                                {dropdown.map((e) => {
+                                  return (
+                                    <div
+                                      className="py-1 dropdownHover px-3"
+                                      key={e.id}
+                                    >
+                                      {e.emerging}
+                                    </div>
+                                  );
+                                })}
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -264,27 +241,34 @@ function Navbar() {
                       to="/pricing"
                       className="nav-link d-flex align-items-center"
                     >
-                      Pricing<span className="fa fa-angle-down pl-1"></span>
+                      PRICING<span className="fa fa-angle-down pl-1"></span>
                     </NavLink>
                     <div
                       className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4"
                       style={{ width: "fit-content" }}
                     >
-                      <div className=" justify-content-center d-flex">
+                      <div className="justify-content-center d-flex">
                         <div
-                          className="mr-lg-0 mr-1"
-                          style={{ borderBottom: "3px solid #086AD8",background:"#ffffff",boxShadow:"0 2px 29px rgb(0 0 0 / 5%)", }}
+                          className=""
+                          style={{
+                            borderBottom: "3px solid #086AD8",
+                            background: "#fffffff2",
+                            boxShadow: "0 2px 29px rgb(0 0 0 / 5%)",
+                          }}
                         >
-                          <div className="dropdownHover py-2 px-3">
+                          <div
+                            className="dropdownHover py-2 px-4"
+                            style={{ background: "#086AD8", color: "white" }}
+                          >
                             SEO Packages
                           </div>
-                          <div className="dropdownHover py-2 px-3">
+                          <div className="dropdownHover py-2 px-4">
                             SMO Packages
                           </div>
-                          <div className="dropdownHover py-2 px-3">
+                          <div className="dropdownHover py-2 px-4">
                             PPC Packages
                           </div>
-                          <div className="dropdownHover py-2 px-3">
+                          <div className="dropdownHover py-2 px-4">
                             WEB Packages
                           </div>
                         </div>
@@ -293,22 +277,12 @@ function Navbar() {
                   </li>
                   <li className="nav-item pl-3">
                     <NavLink to="/protfolio" className="nav-link">
-                      Portfolio
-                    </NavLink>
-                  </li>
-                  <li className="nav-item pl-3">
-                    <NavLink to="/about" className="nav-link">
-                      About Us
-                    </NavLink>
-                  </li>
-                  <li className="nav-item pl-3">
-                    <NavLink to="/testimonial" className="nav-link">
-                      Testimonial
+                      PORTFOLIO
                     </NavLink>
                   </li>
                   <li className="nav-item pl-3">
                     <NavLink to="/blog" className="nav-link">
-                      Blog
+                      BLOGS
                     </NavLink>
                   </li>
                   <li className="nav-item pl-3">
@@ -318,13 +292,8 @@ function Navbar() {
                       data-toggle="modal"
                       className="nav-link"
                     >
-                      Contact Us
+                      CONTACT
                     </a>
-                  </li>
-                  <li className="nav-item pl-lg-3 mx-lg-0 mx-5 mb-lg-0 mb-3">
-                    <div className="btn btn-primary" style={{ width: "100%" }}>
-                      Free Consultation
-                    </div>
                   </li>
                 </ul>
               </div>

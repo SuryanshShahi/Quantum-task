@@ -1,17 +1,62 @@
 export const dropdown = [
-  { id: 1, name: "Digital Marketing" },
-  { id: 2, name: "Search Engine Optimization" },
-  { id: 3, name: "App Store Optimization" },
-  { id: 4, name: "Online Reputation Management" },
-  { id: 5, name: "Small SEO Business" },
-  { id: 6, name: "E-commerce SEO" },
-  { id: 7, name: "D & R Oriented Local SEO" },
-  { id: 8, name: "White Label SEO" },
-  { id: 9, name: "YouTube Optimization" },
-  { id: 10, name: "Web & Apps Development" },
-  { id: 11, name: "Paid Marketing" },
-  { id: 12, name: "Cannabis Industry" },
-];
+  {
+    id: 1,
+    app:"Android App Development",
+    web:"PHP Development",
+    marketing:"SEO Service Company",
+    emerging:"Internet Of Things",
+  },
+  {
+    id: 2,
+    app:"Swift App Development",
+    web:".NET Development",
+    marketing:"PPC Compaign Management",
+    emerging:"Artificial Intelligence",
+  },
+  {
+    id: 3,
+    app:"Ipad App Development",
+    web:"ROR Development",
+    marketing:"App Store Optimization",
+    emerging:"Robotic Process Automation",
+  },
+  {
+    id: 4,
+    app:"Cross-Platfrom App",
+    web:"NODE.js Development",
+    marketing:"Social Media Marketing",
+  },
+  {
+    id: 5,
+    app:"IOS APP Development",
+    web:"Joomla Development",
+    marketing:"New Jersy SEO Company",
+  },
+  {
+    id: 6,
+    app:"Mobile Game Development",
+    web:"Web Development Company USA",
+    marketing:"Advertising Company USA",
+  },
+  {
+    id:7,
+    app:"",
+    marketing:"SEO Services Company USA"
+  }
+
+
+]
+
+  // { id: 2, app:  },
+  // { id: 3, app:  },
+  // { id: 4, app:  },
+  // { id: 5, app: },
+  // { id: 7, app: "" },
+  // { id: 8, app: "" },
+  // { id: 9, app: "" },
+  // { id: 10, app: "" },
+  // { id: 11, app: "" },
+  // { id: 12, app: "" },
 
 export const SEOAnalysis = [
   { name: "Pre-Optimization Website Analysis", sign: "✓" },
