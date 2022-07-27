@@ -19,28 +19,37 @@ import Google from "./Images/powered_by_google.png";
 
 function Home() {
   const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 2,
-      slidesToSlide: 2,
-    },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 2,
-      slidesToSlide: 2,
+      slidesToSlide: 1, // optional, default to 1.
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 1,
+      slidesToSlide: 1, // optional, default to 1.
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
+      slidesToSlide: 1, // optional, default to 1.
     },
   };
   var setting = {
     responsive: responsive,
     centerMode: true,
+    showDots: true,
+    responsive: responsive,
+    ssr: true, // means to render carousel on server-side.
+    infinite: true,
+    autoPlay: true,
+    autoPlaySpeed: 4000,
+    keyBoardControl: true,
+    customTransition: "transform 300ms ease-in-out",
+    transitionDuration: 500,
+    containerClass: "carousel-container",
+    dotListClass: "custom-dot-list-style",
+    itemClass: "carousel-item-padding-40-px",
   };
   return (
     <div style={{ marginTop: "100px" }}>
@@ -257,7 +266,7 @@ function Home() {
         </div>
         {/*---------------------------------------------------------FIRST HAND SEO ANALYSIS---------------------------------------------------------*/}
         <div className="row mt-lg-5 mt-4">
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -281,7 +290,7 @@ function Home() {
             </table>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -305,7 +314,7 @@ function Home() {
             </table>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -329,7 +338,7 @@ function Home() {
             </table>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -371,7 +380,7 @@ function Home() {
 
         {/*---------------------------------------------------------ON-PAGE OPTIMIZATION ACTIVITIES---------------------------------------------------------*/}
         <div className="row mt-lg-5 mt-4">
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -395,7 +404,7 @@ function Home() {
               })}
             </table>
 
-            <div className="d-flex pb-2 mx-2" style={{ fontWeight: "lighter" }}>
+            <div className="d-flex py-2 mx-2" style={{ fontWeight: "lighter" }}>
               On Site Blog Posting – Applicable from 1st month
               <div className="ml-auto" style={{ fontWeight: "normal" }}>
                 1&nbsp;
@@ -403,7 +412,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -426,7 +435,7 @@ function Home() {
                 );
               })}
             </table>
-            <div className="d-flex pb-2 mx-2" style={{ fontWeight: "lighter" }}>
+            <div className="d-flex py-2 mx-2" style={{ fontWeight: "lighter" }}>
               On Site Blog Posting – Applicable from 1st month
               <div className="ml-auto" style={{ fontWeight: "normal" }}>
                 2&nbsp;
@@ -434,7 +443,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -457,7 +466,7 @@ function Home() {
                 );
               })}
             </table>
-            <div className="d-flex pb-2 mx-2" style={{ fontWeight: "lighter" }}>
+            <div className="d-flex py-2 mx-2" style={{ fontWeight: "lighter" }}>
               On Site Blog Posting – Applicable from 1st month
               <div className="ml-auto" style={{ fontWeight: "normal" }}>
                 4&nbsp;
@@ -465,7 +474,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -488,7 +497,7 @@ function Home() {
                 );
               })}
             </table>
-            <div className="d-flex pb-2 mx-2" style={{ fontWeight: "lighter" }}>
+            <div className="d-flex py-2 mx-2" style={{ fontWeight: "lighter" }}>
               On Site Blog Posting – Applicable from 1st month
               <div className="ml-auto" style={{ fontWeight: "normal" }}>
                 5&nbsp;
@@ -514,7 +523,7 @@ function Home() {
 
         {/*---------------------------------------------------------OFF-PAGE OPTIMIZATION ACTIVITIES---------------------------------------------------------*/}
         <div className="row mt-lg-5 mt-4">
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -539,7 +548,7 @@ function Home() {
             </table>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -564,7 +573,7 @@ function Home() {
             </table>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -589,7 +598,7 @@ function Home() {
             </table>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -632,7 +641,7 @@ function Home() {
 
         {/*---------------------------------------------------------SMO ACTIVITIES---------------------------------------------------------*/}
         <div className="row mt-lg-5 mt-4">
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -784,7 +793,7 @@ function Home() {
               </table>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -936,7 +945,7 @@ function Home() {
               </table>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -1087,7 +1096,7 @@ function Home() {
               </table>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -1258,7 +1267,7 @@ function Home() {
 
         {/*---------------------------------------------------------REPORTS---------------------------------------------------------*/}
         <div className="row mt-lg-5 mt-4">
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -1282,7 +1291,7 @@ function Home() {
             </table>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -1306,7 +1315,7 @@ function Home() {
             </table>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -1330,7 +1339,7 @@ function Home() {
             </table>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -1372,7 +1381,7 @@ function Home() {
 
         {/*---------------------------------------------------------CUSTOMER SUPPORT---------------------------------------------------------*/}
         <div className="row mt-lg-5 mt-4">
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -1396,7 +1405,7 @@ function Home() {
             </table>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -1420,7 +1429,7 @@ function Home() {
             </table>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -1444,7 +1453,7 @@ function Home() {
             </table>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4 px-4">
+          <div className="col-lg-3 col-md-6 col-12 pt-lg-0 pt-4">
             <div
               className="mb-4 text-center"
               style={{ fontWeight: "lighter", fontSize: "20px" }}
@@ -1550,7 +1559,7 @@ function Home() {
                 return (
                   <div
                     key={e.id}
-                    className="border-0 my-2 mx-2 rounded p-lg-3 p-2"
+                    className="border-0 my-2 mx-2 rounded py-lg-3 pl-lg-3 p-2"
                     style={{
                       boxShadow: "#80808069 0px 0px 7px 0.5px",
                       maxWidth: "303px",
@@ -1593,7 +1602,7 @@ function Home() {
                       />
                     </div>
                     <div
-                      className="testomonials"
+                      className="testomonials pr-2"
                       style={{
                         fontSize: "12px",
                         overflowY: "overlay",

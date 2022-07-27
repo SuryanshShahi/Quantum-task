@@ -10,8 +10,8 @@ function Footer() {
   return (
     <section id="footer">
       <div className="container-fluid pt-5">
-        <div className="row justify-content-center d-flex">
-          <div className="col-lg-5 col-md-5 col-sm-6 col-12 pb-lg-0 pb-5">
+        <div className="row justify-content-center d-flex pl-2">
+          <div className="col-lg-5 col-md-5 col-sm-6 col-12 pb-lg-0 pb-lg-0 pb-4">
             <div className="">
               <b className="text-white" style={{ fontSize: "17px" }}>
                 PARTNER LOCATIONS
@@ -36,7 +36,7 @@ function Footer() {
               </div>
             </div>
 
-            <div className="py-3">
+            <div className="pt-3">
               <b className="text-white" style={{ fontSize: "17px" }}>
                 DEVELOPMENT CENTER (HEAD OFFICE)
               </b>
@@ -89,7 +89,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="col-lg-2 col-md-2 col-sm-6 col-12 pt-lg-0 pb-5 text-white">
+          <div className="col-lg-2 col-md-2 col-sm-6 col-12 pt-lg-0 text-white pb-lg-0 pb-4">
             <div className="font-weight-bold" style={{ fontSize: "17px" }}>
               TOP SERVICES
               <ul
@@ -110,7 +110,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="col-lg-2 col-md-2 col-sm-6 col-12 pt-lg-0 pb-5 text-white">
+          <div className="col-lg-2 col-md-2 col-sm-6 col-12 pt-lg-0 text-white pb-lg-0 pb-4">
             <div className="font-weight-bold" style={{ fontSize: "17px" }}>
               QUICK LINKS
               <ul
@@ -163,7 +163,7 @@ function Footer() {
             </ul>
             <div className="font-weight-bold" style={{ fontSize: "17px" }}>
               ASSOCIATIONS
-              <div className="my-5 slider">
+              <div className="my-2 slider">
                 <Carousel style={{ width: "200px" }}>
                   {FooterBanner.map((e) => {
                     return (
@@ -180,13 +180,13 @@ function Footer() {
 
         <hr className="m-0" style={{ color: "white" }} />
 
-        <div className="d-lg-flex d-md-flex d-sm-flex container py-2 align-items-center text-center socialicons mt-lg-0 mt-md-0 mt-sm-0 py-3">
+        <div className="d-lg-flex d-md-flex d-sm-flex container align-items-center text-center socialicons py-2">
           <div className="text-white">
             © 2020 Quantum IT Innovation. All Rights Reserved.
           </div>
           <div className="ml-auto d-flex justify-content-center mt-lg-0 mt-md-0 mt-sm-0 mt-4">
             <span
-              className="fa fa-facebook-square fa-lg bg-dark align-items-center d-flex justify-content-center"
+              className="fa fa-facebook fa-lg bg-dark align-items-center d-flex justify-content-center"
               data-toggle="tooltip"
               data-placement="top"
               title="Facebook"
@@ -194,8 +194,8 @@ function Footer() {
                 color: "grey",
                 border: "1px solid white",
                 borderRadius: "50%",
-                height: "50px",
-                width: "50px",
+                height: "45px",
+                width: "45px",
               }}
             ></span>
             <span
@@ -207,8 +207,8 @@ function Footer() {
                 color: "grey",
                 border: "1px solid white",
                 borderRadius: "50%",
-                height: "50px",
-                width: "50px",
+                height: "45px",
+                width: "45px",
               }}
             ></span>
             <span
@@ -220,8 +220,8 @@ function Footer() {
                 color: "grey",
                 border: "1px solid white",
                 borderRadius: "50%",
-                height: "50px",
-                width: "50px",
+                height: "45px",
+                width: "45px",
               }}
             ></span>
             <span
@@ -233,8 +233,8 @@ function Footer() {
                 color: "grey",
                 border: "1px solid white",
                 borderRadius: "50%",
-                height: "50px",
-                width: "50px",
+                height: "45px",
+                width: "45px",
               }}
             ></span>
             <span
@@ -246,8 +246,8 @@ function Footer() {
                 color: "grey",
                 border: "1px solid white",
                 borderRadius: "50%",
-                height: "50px",
-                width: "50px",
+                height: "45px",
+                width: "45px",
               }}
             ></span>
           </div>

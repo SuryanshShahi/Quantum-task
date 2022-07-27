@@ -12,7 +12,7 @@ function Navbar() {
   const [isActive, setActive] = useState(false);
 
   const changeBackground = () => {
-    if (window.scrollY >= 150) {
+    if (window.scrollY >= 100) {
       setNavbar(true);
       setHeader(true);
       setBack(true);
@@ -109,8 +109,9 @@ function Navbar() {
                     </NavLink>
                     <div className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4 w-100">
                       <div
-                        className="row mr-lg-0 mr-1 bg-white py-4"
+                        className="row mr-lg-0 mr-1 py-4"
                         style={{
+                          background:"#ffffff",boxShadow:"0 2px 29px rgb(0 0 0 / 5%)",
                           borderBottom: "3px solid #086AD8",
                           maxHeight: "80vh",
                           overflowY: "scroll",
@@ -121,8 +122,8 @@ function Navbar() {
                             <b className="pl-3">Digital Marketing</b>
 
                             {dropdown.map((e) => {
-                              return (
-                                <div
+                              return ( 
+                                <div 
                                   className="py-1 dropdownHover pl-3"
                                   key={e.id}
                                 >
@@ -138,8 +139,8 @@ function Navbar() {
                             <b className="pl-3">Web & Apps Development</b>
 
                             {dropdown.map((e) => {
-                              return (
-                                <div
+                              return ( 
+                                <div 
                                   className="py-1 dropdownHover pl-3"
                                   key={e.id}
                                 >
@@ -155,8 +156,8 @@ function Navbar() {
                             <b className="pl-3">Paid Marketing</b>
 
                             {dropdown.map((e) => {
-                              return (
-                                <div
+                              return ( 
+                                <div 
                                   className="py-1 dropdownHover pl-3"
                                   key={e.id}
                                 >
@@ -179,8 +180,9 @@ function Navbar() {
                     </NavLink>
                     <div className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4 w-100">
                       <div
-                        className="row mr-lg-0 mr-1 bg-white py-4"
+                        className="row mr-lg-0 mr-1 py-4"
                         style={{
+                          background:"#ffffff",boxShadow:"0 2px 29px rgb(0 0 0 / 5%)",
                           borderBottom: "3px solid #086AD8",
                           maxHeight: "80vh",
                           overflowY: "scroll",
@@ -270,8 +272,8 @@ function Navbar() {
                     >
                       <div className=" justify-content-center d-flex">
                         <div
-                          className="mr-lg-0 mr-1 bg-white"
-                          style={{ borderBottom: "3px solid #086AD8" }}
+                          className="mr-lg-0 mr-1"
+                          style={{ borderBottom: "3px solid #086AD8",background:"#ffffff",boxShadow:"0 2px 29px rgb(0 0 0 / 5%)", }}
                         >
                           <div className="dropdownHover py-2 px-3">
                             SEO Packages
