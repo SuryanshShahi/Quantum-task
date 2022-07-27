@@ -43,7 +43,7 @@ function Navbar() {
           }
         >
           <div className="mx-lg-5 d-flex" style={{ width: "100%" }}>
-            <div className="navbarinline" style={{ width: "100%" }}>
+            <div className="navbarinline mx-lg-5" style={{ width: "100%" }}>
               <div className="d-flex mx-3 align-items-center">
                 {" "}
                 <a
@@ -99,12 +99,13 @@ function Navbar() {
                       : "B navbar-nav ml-auto pl-lg-5 mb-2 mb-lg-0"
                   }
                 >
-                  <li className="nav-item pl-3">
+                  <li className="nav-item pl-4">
                     <NavLink to="/" exact className="active nav-link">
                       HOME
                     </NavLink>
                   </li>
-                  <li className="nav-item pl-3 position-relative">
+         
+                  <li className="nav-item pl-4 position-relative">
                     <NavLink
                       to="/company"
                       className="nav-link d-flex align-items-center"
@@ -134,7 +135,8 @@ function Navbar() {
                       </div>
                     </div>
                   </li>
-                  <li className="nav-item pl-3">
+             
+                  <li className="nav-item pl-4">
                     <NavLink
                       to="/service"
                       className="nav-link d-flex align-items-center"
@@ -236,56 +238,20 @@ function Navbar() {
                       </div>
                     </div>
                   </li>
-                  <li className="nav-item pl-3 position-relative">
-                    <NavLink
-                      to="/pricing"
-                      className="nav-link d-flex align-items-center"
-                    >
-                      PRICING<span className="fa fa-angle-down pl-1"></span>
-                    </NavLink>
-                    <div
-                      className="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4"
-                      style={{ width: "fit-content" }}
-                    >
-                      <div className="justify-content-center d-flex">
-                        <div
-                          className=""
-                          style={{
-                            borderBottom: "3px solid #086AD8",
-                            background: "#fffffff2",
-                            boxShadow: "0 2px 29px rgb(0 0 0 / 5%)",
-                          }}
-                        >
-                          <div
-                            className="dropdownHover py-2 px-4"
-                            style={{ background: "#086AD8", color: "white" }}
-                          >
-                            SEO Packages
-                          </div>
-                          <div className="dropdownHover py-2 px-4">
-                            SMO Packages
-                          </div>
-                          <div className="dropdownHover py-2 px-4">
-                            PPC Packages
-                          </div>
-                          <div className="dropdownHover py-2 px-4">
-                            WEB Packages
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="nav-item pl-3">
+                
+                  <li className="nav-item pl-4">
                     <NavLink to="/protfolio" className="nav-link">
                       PORTFOLIO
                     </NavLink>
                   </li>
-                  <li className="nav-item pl-3">
+                  
+                  <li className="nav-item pl-4">
                     <NavLink to="/blog" className="nav-link">
                       BLOGS
                     </NavLink>
                   </li>
-                  <li className="nav-item pl-3">
+                  
+                  <li className="nav-item pl-4">
                     <a
                       href="#"
                       data-target="#mymodal"
@@ -458,10 +424,10 @@ function Navbar() {
                     </div>
 
                     <div className="col-lg-8 col-12">
-                      <div className="mx-auto py-5 w-auto px-5">
+                      <div className="mx-auto py-5 w-auto px-lg-5">
                         <form>
                           <div className="row">
-                            <div className="col-lg-6 col-md-6">
+                            <div className="col-lg-6 col-md-6 col-12">
                               <div className="mb-3">
                                 <label className="form-label font-weight-bold">
                                   Full Name:
@@ -475,7 +441,7 @@ function Navbar() {
                                 />
                               </div>
                             </div>
-                            <div className="col-lg-6 col-md-6">
+                            <div className="col-lg-6 col-md-6 col-12">
                               <div className="mb-3">
                                 <label className="form-label font-weight-bold">
                                   Phone:
