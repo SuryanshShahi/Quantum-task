@@ -22,25 +22,24 @@ function Home() {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 2,
-      slidesToSlide: 1, // optional, default to 1.
+      slidesToSlide: 1,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 1,
-      slidesToSlide: 1, // optional, default to 1.
+      slidesToSlide: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
-      slidesToSlide: 1, // optional, default to 1.
+      slidesToSlide: 1,
     },
   };
   var setting = {
     responsive: responsive,
     centerMode: true,
     showDots: true,
-    responsive: responsive,
-    ssr: true, // means to render carousel on server-side.
+    ssr: true,
     infinite: true,
     autoPlay: true,
     autoPlaySpeed: 4000,
@@ -1526,11 +1525,11 @@ function Home() {
                   fontSize: "20px",
                 }}
               >
-                D
+                Q
               </div>
               <div className="">
                 <div className="text-primary" style={{ fontWeight: "500" }}>
-                  Digital Guider
+                  Quantum IT Innovations
                 </div>
                 <StarsRating
                   className=""

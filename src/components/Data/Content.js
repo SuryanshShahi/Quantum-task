@@ -1,119 +1,123 @@
 export const dropdown = [
   {
     id: 1,
-    app:"Android App Development",
-    web:"PHP Development",
-    marketing:"SEO Service Company",
-    emerging:"Internet Of Things",
+    app: "Android App Development",
+    web: "PHP Development",
+    marketing: "SEO Service Company",
+    emerging: "Internet Of Things",
   },
   {
     id: 2,
-    app:"Swift App Development",
-    web:".NET Development",
-    marketing:"PPC Compaign Management",
-    emerging:"Artificial Intelligence",
+    app: "Swift App Development",
+    web: ".NET Development",
+    marketing: "PPC Compaign Management",
+    emerging: "Artificial Intelligence",
   },
   {
     id: 3,
-    app:"Ipad App Development",
-    web:"ROR Development",
-    marketing:"App Store Optimization",
-    emerging:"Robotic Process Automation",
+    app: "Ipad App Development",
+    web: "ROR Development",
+    marketing: "App Store Optimization",
+    emerging: "Robotic Process Automation",
   },
   {
     id: 4,
-    app:"Cross-Platfrom App",
-    web:"NODE.js Development",
-    marketing:"Social Media Marketing",
+    app: "Cross-Platfrom App",
+    web: "NODE.js Development",
+    marketing: "Social Media Marketing",
   },
   {
     id: 5,
-    app:"IOS APP Development",
-    web:"Joomla Development",
-    marketing:"New Jersy SEO Company",
+    app: "IOS APP Development",
+    web: "Joomla Development",
+    marketing: "New Jersy SEO Company",
   },
   {
     id: 6,
-    app:"Mobile Game Development",
-    web:"Web Development Company USA",
-    marketing:"Advertising Company USA",
+    app: "Mobile Game Development",
+    web: "Web Development Company USA",
+    marketing: "Advertising Company USA",
   },
   {
-    id:7,
-    app:"",
-    marketing:"SEO Services Company USA"
-  }
-
-
-]
-
-  // { id: 2, app:  },
-  // { id: 3, app:  },
-  // { id: 4, app:  },
-  // { id: 5, app: },
-  // { id: 7, app: "" },
-  // { id: 8, app: "" },
-  // { id: 9, app: "" },
-  // { id: 10, app: "" },
-  // { id: 11, app: "" },
-  // { id: 12, app: "" },
+    id: 7,
+    app: "",
+    marketing: "SEO Services Company USA",
+  },
+];
 
 export const SEOAnalysis = [
-  { name: "Pre-Optimization Website Analysis", sign: "✓" },
-  { name: "Competitor Analysis", sign: "✓" },
-  { name: "Keyword Research & Analysis", sign: "✓" },
-  { name: "Baseline Ranking Check", sign: "✓" },
-  { name: "Duplicate Content Check", sign: "✓" },
-  { name: "Google Penalty Check", sign: "✓" },
-  { name: "Backlink Analysis (if required)", sign: "x" },
+  { id: 1, name: "Pre-Optimization Website Analysis", sign: "✓" },
+  { id: 2, name: "Competitor Analysis", sign: "✓" },
+  { id: 3, name: "Keyword Research & Analysis", sign: "✓" },
+  { id: 4, name: "Baseline Ranking Check", sign: "✓" },
+  { id: 5, name: "Duplicate Content Check", sign: "✓" },
+  { id: 6, name: "Google Penalty Check", sign: "✓" },
+  { id: 7, name: "Backlink Analysis (if required)", sign: "x" },
 ];
 
 export const OnPage = [
-  { name: "Website Canonical Check", sign: "✓", sign1: "✓" },
-  { name: "Title Tag Optimization", sign: "✓", sign1: "✓" },
-  { name: "META Tags Optimization", sign: "✓", sign1: "✓" },
-  { name: "Heading Tags Optimization", sign: "✓", sign1: "✓" },
-  { name: "Image Alt Tags Optimization", sign: "✓", sign1: "✓" },
-  { name: "Content Optimization", sign: "✓", sign1: "✓" },
-  { name: "SEO Friendly URL Setup", sign: "x", sign1: "✓" },
-  { name: "Site Navigation Analysis", sign: "✓", sign1: "✓" },
-  { name: "404 Page Implementation", sign: "✓", sign1: "✓" },
-  { name: "Broken Links Check", sign: "✓", sign1: "✓" },
-  { name: "Website Speed Check", sign: "✓", sign1: "✓" },
-  { name: "Google Indexed Pages Check", sign: "✓", sign1: "✓" },
-  { name: "Robots.txt Creation", sign: "✓", sign1: "✓" },
-  { name: "Google XML Sitemap", sign: "✓", sign1: "✓" },
-  { name: "HTML Sitemap Setup", sign: "✓", sign1: "✓" },
-  { name: "Hyperlink Optimization", sign: "✓", sign1: "✓" },
-  { name: "Website Responsive Check", sign: "✓", sign1: "✓" },
-  { name: "Website Permalinks Analysis", sign: "x", sign1: "✓" },
-  { name: "Internal Linking Optimization", sign: "x", sign1: "✓" },
-  { name: "Google Webmaster Tools Setup", sign: "✓", sign1: "✓" },
-  { name: "Bing Webmaster Tools Setup", sign: "x", sign1: "✓" },
-  { name: "Google Analytics Setup", sign: "✓", sign1: "✓" },
-  { name: "Structured Data Setup", sign: "x", sign1: "✓" },
-  { name: "On Site Blog Section Creation", sign: "✓", sign1: "✓" },
+  { id: 1, name: "Website Canonical Check", sign: "✓", sign1: "✓" },
+  { id: 2, name: "Title Tag Optimization", sign: "✓", sign1: "✓" },
+  { id: 3, name: "META Tags Optimization", sign: "✓", sign1: "✓" },
+  { id: 4, name: "Heading Tags Optimization", sign: "✓", sign1: "✓" },
+  { id: 5, name: "Image Alt Tags Optimization", sign: "✓", sign1: "✓" },
+  { id: 6, name: "Content Optimization", sign: "✓", sign1: "✓" },
+  { id: 7, name: "SEO Friendly URL Setup", sign: "x", sign1: "✓" },
+  { id: 8, name: "Site Navigation Analysis", sign: "✓", sign1: "✓" },
+  { id: 9, name: "404 Page Implementation", sign: "✓", sign1: "✓" },
+  { id: 10, name: "Broken Links Check", sign: "✓", sign1: "✓" },
+  { id: 11, name: "Website Speed Check", sign: "✓", sign1: "✓" },
+  { id: 12, name: "Google Indexed Pages Check", sign: "✓", sign1: "✓" },
+  { id: 13, name: "Robots.txt Creation", sign: "✓", sign1: "✓" },
+  { id: 14, name: "Google XML Sitemap", sign: "✓", sign1: "✓" },
+  { id: 15, name: "HTML Sitemap Setup", sign: "✓", sign1: "✓" },
+  { id: 16, name: "Hyperlink Optimization", sign: "✓", sign1: "✓" },
+  { id: 17, name: "Website Responsive Check", sign: "✓", sign1: "✓" },
+  { id: 18, name: "Website Permalinks Analysis", sign: "x", sign1: "✓" },
+  { id: 19, name: "Internal Linking Optimization", sign: "x", sign1: "✓" },
+  { id: 20, name: "Google Webmaster Tools Setup", sign: "✓", sign1: "✓" },
+  { id: 21, name: "Bing Webmaster Tools Setup", sign: "x", sign1: "✓" },
+  { id: 22, name: "Google Analytics Setup", sign: "✓", sign1: "✓" },
+  { id: 23, name: "Structured Data Setup", sign: "x", sign1: "✓" },
+  { id: 24, name: "On Site Blog Section Creation", sign: "✓", sign1: "✓" },
 ];
 
 export const OffPage = [
   {
+    id: 1,
     name: "Search Engine Submission",
     sign: "✓",
     sign1: "✓",
     sign2: "✓",
     sign3: "✓",
   },
-  { name: "Blog Writing", sign: "2", sign1: "2", sign2: "3", sign3: "5" },
-  { name: "Blog Links", sign: "2", sign1: "2", sign2: "3", sign3: "5" },
   {
+    id: 2,
+    name: "Blog Writing",
+    sign: "2",
+    sign1: "2",
+    sign2: "3",
+    sign3: "5",
+  },
+  { id: 3, name: "Blog Links", sign: "2", sign1: "2", sign2: "3", sign3: "5" },
+  {
+    id: 4,
     name: "Blog Social Bookmarking Links",
     sign: "6",
     sign1: "10",
     sign2: "16",
     sign3: "35",
   },
-  { name: "Article Writing", sign: "1", sign1: "2", sign2: "2", sign3: "4" },
   {
+    id: 5,
+    name: "Article Writing",
+    sign: "1",
+    sign1: "2",
+    sign2: "2",
+    sign3: "4",
+  },
+  {
+    id: 6,
     name: "Article Submissions",
     sign: "1",
     sign1: "2",
@@ -121,15 +125,31 @@ export const OffPage = [
     sign3: "4",
   },
   {
+    id: 7,
     name: "Article Marketing",
     sign: "5",
     sign1: "10",
     sign2: "15",
     sign3: "25",
   },
-  { name: "Image sharing", sign: "2", sign1: "4", sign2: "8", sign3: "12" },
-  { name: "Contextual Links", sign: "✓", sign1: "✓", sign2: "✓", sign3: "✓" },
   {
+    id: 8,
+    name: "Image sharing",
+    sign: "2",
+    sign1: "4",
+    sign2: "8",
+    sign3: "12",
+  },
+  {
+    id: 9,
+    name: "Contextual Links",
+    sign: "✓",
+    sign1: "✓",
+    sign2: "✓",
+    sign3: "✓",
+  },
+  {
+    id: 10,
     name: "Keyword used in anchor text",
     sign: "✓",
     sign1: "✓",
@@ -137,6 +157,7 @@ export const OffPage = [
     sign3: "✓",
   },
   {
+    id: 11,
     name: "Share Each Blog Post Across Social Media Networks",
     sign: "✓",
     sign1: "✓",
@@ -144,6 +165,7 @@ export const OffPage = [
     sign3: "✓",
   },
   {
+    id: 12,
     name: "Web 2.0 Profile Creation",
     sign: "x",
     sign1: "1",
@@ -151,6 +173,7 @@ export const OffPage = [
     sign3: "5",
   },
   {
+    id: 13,
     name: "Web 2.0 Profiles Bookmarking Links",
     sign: "x",
     sign1: "4",
@@ -158,6 +181,7 @@ export const OffPage = [
     sign3: "25",
   },
   {
+    id: 14,
     name: "Press Release (If Client Provides News)",
     sign: "x",
     sign1: "x",
@@ -165,6 +189,7 @@ export const OffPage = [
     sign3: "✓",
   },
   {
+    id: 15,
     name: "Press Release Bookmarking Links",
     sign: "x",
     sign1: "x",
@@ -172,14 +197,23 @@ export const OffPage = [
     sign3: "✓",
   },
   {
+    id: 16,
     name: "Social Bookmarking Links",
     sign: "15",
     sign1: "24",
     sign2: "30",
     sign3: "60",
   },
-  { name: "Micro Blogging", sign: "4", sign1: "7", sign2: "12", sign3: "20" },
   {
+    id: 17,
+    name: "Micro Blogging",
+    sign: "4",
+    sign1: "7",
+    sign2: "12",
+    sign3: "20",
+  },
+  {
+    id: 18,
     name: "Classified Submissions",
     sign: "5",
     sign1: "8",
@@ -187,6 +221,7 @@ export const OffPage = [
     sign3: "25",
   },
   {
+    id: 19,
     name: "Infographics Creation/Month",
     sign: "x",
     sign1: "x",
@@ -194,6 +229,7 @@ export const OffPage = [
     sign3: "✓",
   },
   {
+    id: 20,
     name: "Infographics Post/Month",
     sign: "x",
     sign1: "x",
@@ -201,6 +237,7 @@ export const OffPage = [
     sign3: "✓",
   },
   {
+    id: 21,
     name: "Share each Infographics on Social Media Networks",
     sign: "x",
     sign1: "x",
@@ -208,6 +245,7 @@ export const OffPage = [
     sign3: "✓",
   },
   {
+    id: 22,
     name: "Google Business Page Creation",
     sign: "x",
     sign1: "✓",
@@ -215,14 +253,23 @@ export const OffPage = [
     sign3: "✓",
   },
   {
+    id: 23,
     name: "Bing Local Listing Creation",
     sign: "✓",
     sign1: "✓",
     sign2: "✓",
     sign3: "✓",
   },
-  { name: "PPT Submissions", sign: "x", sign1: "x", sign2: "1", sign3: "3" },
   {
+    id: 24,
+    name: "PPT Submissions",
+    sign: "x",
+    sign1: "x",
+    sign2: "1",
+    sign3: "3",
+  },
+  {
+    id: 25,
     name: "Video Marketing (if Client provides)",
     sign: "✓",
     sign1: "✓",
@@ -230,6 +277,7 @@ export const OffPage = [
     sign3: "✓",
   },
   {
+    id: 26,
     name: "Location optimization",
     sign: "1",
     sign1: "2",
@@ -237,17 +285,26 @@ export const OffPage = [
     sign3: "10",
   },
   {
+    id: 27,
     name: "Local Business Listings",
     sign: "1",
     sign1: "2",
     sign2: "4",
     sign3: "10",
   },
-  { name: "NAP Syndication", sign: "✓", sign1: "✓", sign2: "✓", sign3: "✓" },
+  {
+    id: 28,
+    name: "NAP Syndication",
+    sign: "✓",
+    sign1: "✓",
+    sign2: "✓",
+    sign3: "✓",
+  },
 ];
 
 export const Facebook = [
   {
+    id: 1,
     name: "Facebook Profile Creation",
     sign: "x",
     sign1: "✓",
@@ -255,6 +312,7 @@ export const Facebook = [
     sign3: "✓",
   },
   {
+    id: 2,
     name: "Facebook Fan Page Creation",
     sign: "x",
     sign1: "✓",
@@ -262,6 +320,7 @@ export const Facebook = [
     sign3: "✓",
   },
   {
+    id: 3,
     name: "Facebook Posting & Sharing",
     sign: "x",
     sign1: "4",
@@ -271,6 +330,7 @@ export const Facebook = [
 ];
 export const Instagram = [
   {
+    id: 1,
     name: "Instagram Profile Creation",
     sign: "x",
     sign1: "✓",
@@ -278,6 +338,7 @@ export const Instagram = [
     sign3: "✓",
   },
   {
+    id: 2,
     name: "Instagram Posting & Sharing",
     sign: "x",
     sign1: "✓",
@@ -287,6 +348,7 @@ export const Instagram = [
 ];
 export const Twitter = [
   {
+    id: 1,
     name: "Twitter Profile Creation",
     sign: "x",
     sign1: "✓",
@@ -294,6 +356,7 @@ export const Twitter = [
     sign3: "✓",
   },
   {
+    id: 2,
     name: "Twitter Post",
     sign: "x",
     sign1: "4",
@@ -303,6 +366,7 @@ export const Twitter = [
 ];
 export const Printrest = [
   {
+    id: 1,
     name: "Account Creation/Management",
     sign: "x",
     sign1: "x",
@@ -310,6 +374,7 @@ export const Printrest = [
     sign3: "✓",
   },
   {
+    id: 2,
     name: "Pinterest Followers",
     sign: "x",
     sign1: "x",
@@ -317,6 +382,7 @@ export const Printrest = [
     sign3: "✓",
   },
   {
+    id: 3,
     name: "Updating of pin boards",
     sign: "x",
     sign1: "x",
@@ -324,6 +390,7 @@ export const Printrest = [
     sign3: "✓",
   },
   {
+    id: 4,
     name: "Pins (If Client Provides Images)",
     sign: "x",
     sign1: "x",
@@ -333,6 +400,7 @@ export const Printrest = [
 ];
 export const Linkedin = [
   {
+    id: 1,
     name: "Linkedin Profile Creation",
     sign: "x",
     sign1: "x",
@@ -340,6 +408,7 @@ export const Linkedin = [
     sign3: "✓",
   },
   {
+    id: 2,
     name: "Linkedin Posting & Sharing",
     sign: "x",
     sign1: "x",
@@ -349,28 +418,34 @@ export const Linkedin = [
 ];
 export const Reports = [
   {
+    id: 1,
     name: "Monthly Website Analytics Report",
     sign: "✓",
   },
   {
+    id: 2,
     name: "Monthly Keywords Ranking Report",
     sign: "✓",
   },
   {
+    id: 3,
     name: "Monthly Off Page Submission Report",
     sign: "✓",
   },
 ];
 export const CustomerReport = [
   {
+    id: 1,
     name: "Email",
     sign: "✓",
   },
   {
+    id: 2,
     name: "Phone",
     sign: "✓",
   },
   {
+    id: 3,
     name: "Chat",
     sign: "✓",
   },
@@ -378,64 +453,69 @@ export const CustomerReport = [
 
 export const testimonials = [
   {
+    id: 1,
     name: "Mike Sullivan",
     fLetter: "M",
     duration: "6 months",
-    rating: "5",
+    rating: 5,
     description:
       "They have been very detailed and also responsive to all my questions.  They are way to work with.   It has only been 3 months but hopefully my ranking will continue to improve.",
   },
   {
+    id: 2,
     name: "Carlene Cast",
     fLetter: "C",
     duration: "7 months",
-    rating: "5",
+    rating: 5,
     description:
       "These guys are fantastic! Taran takes the time to assess what is required to resolve any issues with my website. I can always count on this team to help us achieve any short-term or long-term goals we have for our website. They've been a huge help to our company so far, and I'll continue to use his services as needed. I'm so glad I found Digital Guider for my business!",
   },
   {
+    id: 3,
     name: "Bob Cool",
     fLetter: "B",
     duration: "7 months",
-    rating: "3",
+    rating: 3,
     description:
       "They were helpful, but I felt very cornered and was not really listened to.There PDF website survey was way more helpful than the meeting call I was in.",
   },
   {
+    id: 4,
     name: "VENUS TRUONG",
     fLetter: "V",
     duration: "9 months",
-    rating: "5",
+    rating: 5,
     description:
       "Vic is EXCELLENT, EXCELLENT! Professional and top notch service for my business . I just really want to tell you how lucky I am to work with you.Thanks million....'Ps; Will prefer friends to you.Venus T",
   },
   {
+    id: 5,
     name: "Jared Wright",
     fLetter: "J",
     duration: "9 months",
-    rating: "5",
+    rating: 5,
     description:
       "I have had a great experience with Digital Guider. I am the Owner and operator of Zion Amazing Adventures a guiding company in the Zion area. I have a lot on my plate and have little to no time for marketing. Anna Wilson makes sure that I make it a priority because of the impact it will have on our success. She has me approve the work so I can focus on our clients. We have already seen progress in our first month. Stoked.",
   },
 ];
 
-export const ServiceAreas = [
-  "Alaska SEO",
-  "North Carolina SEO",
-  "Colorado SEO",
-  "Oregon SEO",
-  "Florida SEO",
-  "California SEO",
-  "Ohio SEO",
-  "Illinois SEO",
-  "Massachusetts SEO",
-  "South Carolina SEO",
-  "Pennysylvania SEO",
-  "Texas SEO",
-  "Oklahoma SEO",
-  "Arizono SEO",
-  "Alabama SEO",
-];
+// export const ServiceAreas = [
+//   "Alaska SEO",
+//   "North Carolina SEO",
+//   "Colorado SEO",
+//   "Oregon SEO",
+//   "Florida SEO",
+//   "California SEO",
+//   "Ohio SEO",
+//   "Illinois SEO",
+//   "Massachusetts SEO",
+//   "South Carolina SEO",
+//   "Pennysylvania SEO",
+//   "Texas SEO",
+//   "Oklahoma SEO",
+//   "Arizono SEO",
+//   "Alabama SEO",
+// ];
 
 export const FooterBanner = [
   { id: 1, image: "https://quantumitinnovation.com/assets/images/blog/1.png" },
