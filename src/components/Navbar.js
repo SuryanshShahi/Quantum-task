@@ -32,7 +32,7 @@ function Navbar() {
       </div>
       <header className="fixed-top" id="header">
         <nav
-          style={{padding:"0"}}
+          style={{ padding: "0" }}
           className={
             navbar
               ? "navbar active navbar-expand-lg bg-white text-dark py-lg-2"
@@ -90,7 +90,7 @@ function Navbar() {
                 id="navbarSupportedContent"
               >
                 <ul
-                style={{zIndex:"1"}}
+                  style={{ zIndex: "1" }}
                   className="NavDropdown navbar-nav ml-auto pl-lg-5 mb-2 mb-lg-0"
                 >
                   <li className="nav-item pl-4 pt-lg-0 pt-2">
@@ -98,7 +98,7 @@ function Navbar() {
                       HOME
                     </NavLink>
                   </li>
-         
+
                   <li className="nav-item pl-4 position-relative">
                     <NavLink
                       to="/company"
@@ -116,20 +116,21 @@ function Navbar() {
                           style={{
                             borderBottom: "3px solid #086AD8",
                             background: "#fffffff2",
-                            boxShadow: "0 2px 29px rgb(0 0 0 / 5%)",width:"max-content"
+                            boxShadow: "0 2px 29px rgb(0 0 0 / 5%)",
+                            width: "max-content",
                           }}
                         >
                           <div className="dropdownHover py-2 px-4">
-                     Why Quantum It Innovation?
+                            Why Quantum It Innovation?
                           </div>
                           <div className="dropdownHover py-2 px-4">
-                     Partnership
+                            Partnership
                           </div>
                         </div>
                       </div>
                     </div>
                   </li>
-             
+
                   <li className="nav-item pl-4">
                     <NavLink
                       to="/service"
@@ -161,7 +162,7 @@ function Navbar() {
                                   <b>APP DEVELOPMENT</b>
                                 </div>
 
-                                {dropdown.map((e) => {
+                                {dropdown.slice(0, 6).map((e) => {
                                   return (
                                     <div
                                       className="py-1 dropdownHover px-3"
@@ -179,7 +180,7 @@ function Navbar() {
                                   <b>WEB DEVELOPMENT</b>
                                 </div>
 
-                                {dropdown.map((e) => {
+                                {dropdown.slice(0, 6).map((e) => {
                                   return (
                                     <div
                                       className="py-1 dropdownHover px-3"
@@ -197,7 +198,7 @@ function Navbar() {
                                   <b>DIGITAL MARKETING</b>
                                 </div>
 
-                                {dropdown.map((e) => {
+                                {dropdown.slice(0, 7).map((e) => {
                                   return (
                                     <div
                                       className="py-1 dropdownHover px-3"
@@ -215,7 +216,7 @@ function Navbar() {
                                   <b>EMERGING TECHNOLOGY</b>
                                 </div>
 
-                                {dropdown.map((e) => {
+                                {dropdown.slice(0, 3).map((e) => {
                                   return (
                                     <div
                                       className="py-1 dropdownHover px-3"
@@ -232,19 +233,19 @@ function Navbar() {
                       </div>
                     </div>
                   </li>
-                
+
                   <li className="nav-item pl-4">
                     <NavLink to="/protfolio" className="nav-link">
                       PORTFOLIO
                     </NavLink>
                   </li>
-                  
+
                   <li className="nav-item pl-4">
                     <NavLink to="/blog" className="nav-link">
                       BLOGS
                     </NavLink>
                   </li>
-                  
+
                   <li className="nav-item pl-4">
                     <a
                       href="#"
