@@ -49,7 +49,8 @@ body {
   color: white;
 }
 .navbar.active {
-  animation: fadeNav 0.5s linear forwards;
+  animation: fadeNav 0.7s linear forwards;
+  box-shadow: 0 8px 20px 0 rgb(0 0 0 / 10%);
 }
 .navbar {
   transition: all 0.5s;
@@ -98,12 +99,12 @@ body {
 }
 
 .all {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
-#hero {
-  background: url("./components/Images/bg.webp") no-repeat;
+#banner {
+  background: url("./components/Images/bg1.jfif") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   position: relative;

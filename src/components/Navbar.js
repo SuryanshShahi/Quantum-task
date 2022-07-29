@@ -35,7 +35,7 @@ function Navbar() {
       </div>
       <header className="fixed-top" id="header">
         <nav
-          style={{ boxShadow: "0 8px 20px 0 rgb(0 0 0 / 10%)" }}
+          // style={{ boxShadow: "0 8px 20px 0 rgb(0 0 0 / 10%)" }}
           className={
             navbar
               ? "navbar active navbar-expand-lg bg-white text-dark"
@@ -299,7 +299,7 @@ function Navbar() {
             </div>
           </div>
         </div>
-        <div id="hero"></div>
+        <div id="banner"></div>
       </div>
 
       <div
