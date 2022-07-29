@@ -6,7 +6,7 @@ import logoWhite from "./Images/logo-white.png";
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
-  const [B, setHeader] = useState(false);
+  const [NavDropdown, setHeader] = useState(false);
   const [back, setBack] = useState(false);
   const [bars, setBars] = useState(false);
   const [isActive, setActive] = useState(false);
@@ -35,16 +35,16 @@ function Navbar() {
       </div>
       <header className="fixed-top" id="header">
         <nav
-          // style={{ boxShadow: "0 8px 20px 0 rgb(0 0 0 / 10%)" }}
+          style={{padding:"0"}}
           className={
             navbar
-              ? "navbar active navbar-expand-lg bg-white text-dark"
-              : "navbar navbar-expand-lg bg-transparent"
+              ? "navbar active navbar-expand-lg bg-white text-dark py-lg-2"
+              : "navbar navbar-expand-lg bg-transparent py-lg-2"
           }
         >
           <div className="mx-lg-5 d-flex" style={{ width: "100%" }}>
             <div className="navbarinline mx-lg-5" style={{ width: "100%" }}>
-              <div className="d-flex mx-3 align-items-center">
+              <div className="d-flex mx-3 align-items-center py-lg-0 py-1">
                 {" "}
                 <a
                   className="navbar-brand"
@@ -93,13 +93,14 @@ function Navbar() {
                 id="navbarSupportedContent"
               >
                 <ul
+                style={{zIndex:"1"}}
                   className={
-                    B
-                      ? "B active ml-auto navbar-nav pl-lg-5 mb-2 mb-lg-0"
-                      : "B navbar-nav ml-auto pl-lg-5 mb-2 mb-lg-0"
+                    NavDropdown
+                      ? "NavDropdown active ml-auto navbar-nav pl-lg-5 mb-2 mb-lg-0"
+                      : "NavDropdown navbar-nav ml-auto pl-lg-5 mb-2 mb-lg-0"
                   }
                 >
-                  <li className="nav-item pl-4">
+                  <li className="nav-item pl-4 pt-lg-0 pt-2">
                     <NavLink to="/" exact className="active nav-link">
                       HOME
                     </NavLink>
@@ -149,9 +150,9 @@ function Navbar() {
                       style={{ width: "100%" }}
                     >
                       <div className="justify-content-center d-flex">
-                        <div className="">
+                        <div className="mr-lg-0 mr-4">
                           <div
-                            className="row mr-lg-0 mr-1 py-4"
+                            className="row gx-0 py-4"
                             style={{
                               background: "#fffffff2",
                               width: "fit-content",
@@ -271,7 +272,7 @@ function Navbar() {
       <div className="all">
         <div className="position-absolute" style={{ width: "100%" }}>
           <div
-            className="text-white justify-content-center align-items-center d-flex"
+            className="text-white justify-content-center align-items-center d-flex bannerHeading"
             style={{
               width: "100%",
               height: "80vh",
