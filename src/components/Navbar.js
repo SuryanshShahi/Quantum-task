@@ -6,7 +6,6 @@ import logoWhite from "./Images/logo-white.png";
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
-  const [NavDropdown, setHeader] = useState(false);
   const [back, setBack] = useState(false);
   const [bars, setBars] = useState(false);
   const [isActive, setActive] = useState(false);
@@ -14,13 +13,11 @@ function Navbar() {
   const changeBackground = () => {
     if (window.scrollY >= 100) {
       setNavbar(true);
-      setHeader(true);
       setBack(true);
       setBars(true);
       setActive(true);
     } else {
       setNavbar(false);
-      setHeader(false);
       setBack(false);
       setBars(false);
       setActive(false);
@@ -94,11 +91,7 @@ function Navbar() {
               >
                 <ul
                 style={{zIndex:"1"}}
-                  className={
-                    NavDropdown
-                      ? "NavDropdown active ml-auto navbar-nav pl-lg-5 mb-2 mb-lg-0"
-                      : "NavDropdown navbar-nav ml-auto pl-lg-5 mb-2 mb-lg-0"
-                  }
+                  className="NavDropdown navbar-nav ml-auto pl-lg-5 mb-2 mb-lg-0"
                 >
                   <li className="nav-item pl-4 pt-lg-0 pt-2">
                     <NavLink to="/" exact className="active nav-link">
